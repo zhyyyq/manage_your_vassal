@@ -1,0 +1,151 @@
+﻿namespace = purge_your_vassal_tax
+
+purge_your_vassal_tax.1 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = scope:target_country
+	}
+
+	title = purge_your_vassal_tax_events.1.t
+	desc = purge_your_vassal_tax_events.1.d
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	immediate = {
+	}
+	option = {
+		# high tax
+		name = purge_your_vassal_tax_events.1.choose.1
+		trigger = {
+			NOT = {
+				scope:target_country = {
+					has_modifier = overlord_high_taxes
+				}
+			}
+		}
+		remove_modifier = purge_your_vassal
+		scope:target_country = {
+			if = {
+				limit = {
+					has_modifier = overlord_middle_taxes
+				}
+				remove_modifier = overlord_middle_taxes
+			}
+			if = {
+				limit = {
+					has_modifier = overlord_low_taxes
+				}
+				remove_modifier = overlord_low_taxes
+			}
+			add_modifier = overlord_high_taxes
+		}
+	}
+	option = {
+		# middle tax
+		name = purge_your_vassal_tax_events.1.choose.2
+		trigger = {
+			NOT = {
+				scope:target_country = {
+					has_modifier = overlord_middle_taxes
+				}
+			}
+		}
+		remove_modifier = purge_your_vassal
+		scope:target_country = {
+			if = {
+				limit = {
+					has_modifier = overlord_high_taxes
+				}
+				remove_modifier = overlord_high_taxes
+			}
+			if = {
+				limit = {
+					has_modifier = overlord_low_taxes
+				}
+				remove_modifier = overlord_low_taxes
+			}
+			add_modifier = overlord_middle_taxes
+		}
+	}
+	option = {
+		# low tax
+		name = purge_your_vassal_tax_events.1.choose.3
+		trigger = {
+			NOT = {
+				scope:target_country = {
+					has_modifier = overlord_low_taxes
+				}
+			}
+		}
+		remove_modifier = purge_your_vassal
+		scope:target_country = {
+			if = {
+				limit = {
+					has_modifier = overlord_high_taxes
+				}
+				remove_modifier = overlord_high_taxes
+			}
+			if = {
+				limit = {
+					has_modifier = overlord_middle_taxes
+				}
+				remove_modifier = overlord_middle_taxes
+			}
+			add_modifier = overlord_low_taxes
+		}
+	}
+	option = {
+		# cancel tax
+		name = purge_your_vassal_tax_events.1.choose.4
+		trigger = {
+			or = {
+				scope:target_country = {
+					has_modifier = overlord_high_taxes
+				}
+				scope:target_country = {
+					has_modifier = overlord_middle_taxes
+				}
+				scope:target_country = {
+					has_modifier = overlord_low_taxes
+				}
+			}	
+		}
+		remove_modifier = purge_your_vassal
+		scope:target_country = {
+			if = {
+				limit = {
+					has_modifier = overlord_high_taxes
+				}
+				remove_modifier = overlord_high_taxes
+			}
+			if = {
+				limit = {
+					has_modifier = overlord_middle_taxes
+				}
+				remove_modifier = overlord_middle_taxes
+			}
+			if = {
+				limit = {
+					has_modifier = overlord_low_taxes
+				}
+				remove_modifier = overlord_low_taxes
+			}
+		}
+	}
+	option = {
+		name = CANCEL
+		default_option = yes
+		remove_modifier = purge_your_vassal
+	}
+}

@@ -1,0 +1,170 @@
+namespace = purge_your_vassal_culture
+
+purge_your_vassal_culture.1 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = scope:target_country
+	}
+
+	title = purge_your_vassal_culture_events.1.t
+	desc = purge_your_vassal_culture_events.1.d
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	immediate = {
+		every_primary_culture = {
+			if = { limit = { NOT = { exists = scope:convert_state_culture_1 } } save_scope_as = convert_state_culture_1 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_2 } } save_scope_as = convert_state_culture_2 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_3 } } save_scope_as = convert_state_culture_3 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_4 } } save_scope_as = convert_state_culture_4 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_5 } } save_scope_as = convert_state_culture_5 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_6 } } save_scope_as = convert_state_culture_6 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_7 } } save_scope_as = convert_state_culture_7 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_8 } } save_scope_as = convert_state_culture_8 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_9 } } save_scope_as = convert_state_culture_9 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_10 } } save_scope_as = convert_state_culture_10 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_11 } } save_scope_as = convert_state_culture_11 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_12 } } save_scope_as = convert_state_culture_12 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_13 } } save_scope_as = convert_state_culture_13 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_14 } } save_scope_as = convert_state_culture_14 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_15 } } save_scope_as = convert_state_culture_15 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_16 } } save_scope_as = convert_state_culture_16 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_17 } } save_scope_as = convert_state_culture_17 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_18 } } save_scope_as = convert_state_culture_18 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_19 } } save_scope_as = convert_state_culture_19 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_20 } } save_scope_as = convert_state_culture_20 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_21 } } save_scope_as = convert_state_culture_21 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_22 } } save_scope_as = convert_state_culture_22 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_23 } } save_scope_as = convert_state_culture_23 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_24 } } save_scope_as = convert_state_culture_24 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_25 } } save_scope_as = convert_state_culture_25 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_26 } } save_scope_as = convert_state_culture_26 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_27 } } save_scope_as = convert_state_culture_27 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_28 } } save_scope_as = convert_state_culture_28 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_29 } } save_scope_as = convert_state_culture_29 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_30 } } save_scope_as = convert_state_culture_30 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_31 } } save_scope_as = convert_state_culture_31 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_32 } } save_scope_as = convert_state_culture_32 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_33 } } save_scope_as = convert_state_culture_33 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_34 } } save_scope_as = convert_state_culture_34 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_35 } } save_scope_as = convert_state_culture_35 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_36 } } save_scope_as = convert_state_culture_36 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_37 } } save_scope_as = convert_state_culture_37 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_38 } } save_scope_as = convert_state_culture_38 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_39 } } save_scope_as = convert_state_culture_39 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_40 } } save_scope_as = convert_state_culture_40 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_41 } } save_scope_as = convert_state_culture_41 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_42 } } save_scope_as = convert_state_culture_42 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_43 } } save_scope_as = convert_state_culture_43 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_44 } } save_scope_as = convert_state_culture_44 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_45 } } save_scope_as = convert_state_culture_45 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_46 } } save_scope_as = convert_state_culture_46 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_47 } } save_scope_as = convert_state_culture_47 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_48 } } save_scope_as = convert_state_culture_48 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_49 } } save_scope_as = convert_state_culture_49 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_50 } } save_scope_as = convert_state_culture_50 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_51 } } save_scope_as = convert_state_culture_51 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_52 } } save_scope_as = convert_state_culture_52 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_53 } } save_scope_as = convert_state_culture_53 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_54 } } save_scope_as = convert_state_culture_54 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_55 } } save_scope_as = convert_state_culture_55 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_56 } } save_scope_as = convert_state_culture_56 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_57 } } save_scope_as = convert_state_culture_57 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_58 } } save_scope_as = convert_state_culture_58 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_59 } } save_scope_as = convert_state_culture_59 } else = { if = { limit = { NOT = { exists = scope:convert_state_culture_60 } } save_scope_as = convert_state_culture_60 } else = { } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } }
+		}
+	}
+	option = {
+		name = purge_your_vassal_culture_events.1.choose.1
+		remove_modifier = purge_your_vassal
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+		}
+		every_primary_culture = {
+			scope:target_country = {
+				add_primary_culture = prev
+			}
+		}	
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_1').GetName]" 
+		trigger = { exists = scope:convert_state_culture_1 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_1
+		}
+	} 
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_2').GetName]" 
+		trigger = { exists = scope:convert_state_culture_2 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_2
+		}
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_3').GetName]" 
+		trigger = { exists = scope:convert_state_culture_3 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_3
+		}
+	}  
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_4').GetName]" 
+		trigger = { exists = scope:convert_state_culture_4 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_4
+		}
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_5').GetName]" 
+		trigger = { exists = scope:convert_state_culture_5 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_5
+		}
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_6').GetName]" 
+		trigger = { exists = scope:convert_state_culture_6 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_6
+		}
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_7').GetName]" 
+		trigger = { exists = scope:convert_state_culture_7
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_7
+		}
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_8').GetName]" 
+		trigger = { exists = scope:convert_state_culture_8 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_8
+		}
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_9').GetName]" 
+		trigger = { exists = scope:convert_state_culture_9 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_9
+		}
+	}
+	option = { 
+		name = "[SCOPE.sCulture('convert_state_culture_10').GetName]" 
+		trigger = { exists = scope:convert_state_culture_10 } 
+		scope:target_country = {
+			every_primary_culture = {
+				scope:target_country = {
+					remove_primary_culture = prev
+				}
+			}
+			add_primary_culture = scope:convert_state_culture_10
+		}
+	}
+	option = {
+		name = CANCEL
+		default_option = yes
+		remove_modifier = purge_your_vassal
+	}
+}

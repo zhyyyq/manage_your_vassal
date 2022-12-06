@@ -1,0 +1,31 @@
+﻿purge_your_vassal = {
+	requires_approval = no
+	should_notify_third_parties = no
+	show_effect_in_tooltip = no
+
+	potential = {
+		NOT = { is_country_type = decentralized }
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+			is_subject_of = ROOT
+		}
+		is_player = yes
+	}
+	
+	possible = {
+		NOT = {
+			has_modifier = purge_your_vassal
+		}
+	}
+	
+	accept_effect = {
+		trigger_event = { id = purge_your_vassal.1 popup = yes }
+		save_scope_as = scope_rootxxx
+	}
+	
+	ai = {
+		will_propose = { 
+			always = no
+		}
+	}
+}

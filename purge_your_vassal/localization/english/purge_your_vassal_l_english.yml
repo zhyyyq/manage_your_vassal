@@ -1,0 +1,33 @@
+﻿l_english:
+ purge_your_vassal:0 "manage your vassal"
+ purge_your_vassal_action_name:0 "manage your vassal"
+ purge_your_vassal_desc:0 "manage your vassal"
+ purge_your_vassal_action_notification_name:0 "manage your vassal"
+ purge_your_vassal_action_notification_desc:0 "manage your vassal"
+ purge_your_vassal_modifier:0 "manage your vassal"
+ 
+ purge_your_vassal_events.1.t:0 "how to manage"
+ purge_your_vassal_events.1.d:0 "Select the method of the manage that will be done to [SCOPE.sC('target_country').GetName]."
+ purge_your_vassal_events.1.choose.1:0 "change their culture"
+ purge_your_vassal_events.1.choose.2:0 "change their religion"
+ purge_your_vassal_events.1.choose.3:0 "fuck just annex it!"
+ purge_your_vassal_events.1.choose.4:0 "tax"
+ purge_your_vassal_events.1.choose.5:0 "migration"
+
+
+ purge_your_vassal_culture_events.1.t:0 "culture"
+ purge_your_vassal_culture_events.1.d:0 "choose culture"
+ purge_your_vassal_culture_events.1.choose.1:0 "just copy our culture"
+
+ purge_your_vassal_tax_events.1.t:0 "extra tax"
+ purge_your_vassal_tax_events.1.d:0 "choose tax policy"
+ purge_your_vassal_tax_events.1.choose.1:0 "high tax"
+ purge_your_vassal_tax_events.1.choose.2:0 "middle tax"
+ purge_your_vassal_tax_events.1.choose.3:0 "low tax"
+ purge_your_vassal_tax_events.1.choose.4:0 "cancel tax"
+
+ purge_your_vassal_migration_events.1.t:0 "migration"
+ purge_your_vassal_migration_events.1.d:0 "choose migration policy"
+ purge_your_vassal_migration_events.1.choose.1:0 "attract pop"
+ purge_your_vassal_migration_events.1.choose.2:0 "send pop"
+ purge_your_vassal_migration_events.1.choose.3:0 "stop migration"
