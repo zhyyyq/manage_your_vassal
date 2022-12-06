@@ -4,17 +4,17 @@
 
 overlord_high_taxes = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	tax_income_add = 0.5
+	tax_income_add = 0.8
 }
 
 overlord_middle_taxes = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	tax_income_add = 0.25
+	tax_income_add = 0.6
 }
 
 overlord_low_taxes = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	tax_income_add = 0.1
+	tax_income_add = 0.4
 }
 
 overlord_attract_pop = {
