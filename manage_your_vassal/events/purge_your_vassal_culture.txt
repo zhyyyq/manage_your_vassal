@@ -46,6 +46,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_1').GetName]" 
 		trigger = { exists = scope:convert_state_culture_1 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -58,6 +59,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_2').GetName]" 
 		trigger = { exists = scope:convert_state_culture_2 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -70,6 +72,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_3').GetName]" 
 		trigger = { exists = scope:convert_state_culture_3 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -82,6 +85,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_4').GetName]" 
 		trigger = { exists = scope:convert_state_culture_4 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -94,6 +98,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_5').GetName]" 
 		trigger = { exists = scope:convert_state_culture_5 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -106,6 +111,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_6').GetName]" 
 		trigger = { exists = scope:convert_state_culture_6 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -117,7 +123,9 @@ purge_your_vassal_culture.1 = {
 	}
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_7').GetName]" 
-		trigger = { exists = scope:convert_state_culture_7
+		trigger = { exists = scope:convert_state_culture_7 } 
+		remove_modifier = purge_your_vassal
+		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
 					remove_primary_culture = prev
@@ -129,6 +137,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_8').GetName]" 
 		trigger = { exists = scope:convert_state_culture_8 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -141,6 +150,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_9').GetName]" 
 		trigger = { exists = scope:convert_state_culture_9 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
@@ -153,6 +163,7 @@ purge_your_vassal_culture.1 = {
 	option = { 
 		name = "[SCOPE.sCulture('convert_state_culture_10').GetName]" 
 		trigger = { exists = scope:convert_state_culture_10 } 
+		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			every_primary_culture = {
 				scope:target_country = {
