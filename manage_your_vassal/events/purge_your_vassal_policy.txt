@@ -26,7 +26,7 @@ purge_your_vassal_policy.1 = {
 	}
 	option = {
 		name = purge_your_vassal_events.1.choose.1
-		trigger_event = { id = purge_your_vassal_policy_1.1 popup = yes }
+		trigger_event = { id = purge_your_vassal_policy_menu.1 popup = yes }
 	}
 	option = {
 		name = purge_your_vassal_events.1.choose.2
