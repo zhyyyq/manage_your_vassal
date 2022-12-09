@@ -1,0 +1,64 @@
+namespace = purge_your_vassal_policy_menu3_education_system
+
+purge_your_vassal_policy_menu3_education_system.1 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = scope:target_country
+	}
+
+	title = purge_your_vassal_policy_menu3_education_system_events.1.t
+	desc = purge_your_vassal_policy_menu3_education_system_events.1.d
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	immediate = {
+	}
+    
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.1
+        scope:target_country = {
+            activate_law = law_type:law_no_schools
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.2
+        scope:target_country = {
+            activate_law = law_type:law_religious_schools
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.3
+        scope:target_country = {
+            activate_law = law_type:law_private_schools
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.4
+        scope:target_country = {
+            activate_law = law_type:law_public_schools
+        }
+    }
+    
+	option = {
+		name = CANCEL
+		default_option = yes
+		remove_modifier = purge_your_vassal
+	}
+}
