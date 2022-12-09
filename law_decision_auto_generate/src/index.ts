@@ -14,7 +14,7 @@ const handleLawFile = (fileName: string, content: string) => {
     const options = parsedContent.map( (item, index) => (
     `
     option = {
-        name = purge_your_vassal_policy_${policy_name}.events.1.choose.${index}
+        name = purge_your_vassal_policy_options.${policy_name}.events.1.choose.${index}
         scope:target_country = {
             activate_law = law_type:${item.getName()}
         }
@@ -28,7 +28,7 @@ const handleLawFile = (fileName: string, content: string) => {
 }
 const generateMenu = async () => {
     const template = fs.readFileSync( path.join(__dirname,'../template/menu_temp.txt')).toString();
-    const menus = policy_group.map( policy => {
+    const menus = policy_group.map( (policy, index) => {
         const options = policy.subs.map( (item, index) => (
     `
     option = {
@@ -37,7 +37,7 @@ const generateMenu = async () => {
     }
     `
     )).join('\n');
-        const res = template.replace(/###option_name###/g, policy.name).replace(/###options###/g, options);
+        const res = template.replace(/###option_name###/g, ""+index).replace(/###options###/g, options);
         return res;
     }).join('\n');
     const res = "namespace = purge_your_vassal_policy_menu\n" + menus;

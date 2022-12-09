@@ -1,5 +1,5 @@
 namespace = purge_your_vassal_policy_menu
-purge_your_vassal_policy_menu.power_structure = {
+purge_your_vassal_policy_menu.0 = {
 	type = country_event
 	placement = ROOT
 
@@ -7,8 +7,8 @@ purge_your_vassal_policy_menu.power_structure = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_menu_events.power_structure.t
-	desc = purge_your_vassal_policy_menu_events.power_structure.d
+	title = purge_your_vassal_policy_menu_events.0.t
+	desc = purge_your_vassal_policy_menu_events.0.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -71,7 +71,7 @@ purge_your_vassal_policy_menu.power_structure = {
 		remove_modifier = purge_your_vassal
 	}
 }
-purge_your_vassal_policy_menu.economy = {
+purge_your_vassal_policy_menu.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -79,8 +79,8 @@ purge_your_vassal_policy_menu.economy = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_menu_events.economy.t
-	desc = purge_your_vassal_policy_menu_events.economy.d
+	title = purge_your_vassal_policy_menu_events.1.t
+	desc = purge_your_vassal_policy_menu_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -143,7 +143,7 @@ purge_your_vassal_policy_menu.economy = {
 		remove_modifier = purge_your_vassal
 	}
 }
-purge_your_vassal_policy_menu.human_rights = {
+purge_your_vassal_policy_menu.2 = {
 	type = country_event
 	placement = ROOT
 
@@ -151,8 +151,8 @@ purge_your_vassal_policy_menu.human_rights = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_menu_events.human_rights.t
-	desc = purge_your_vassal_policy_menu_events.human_rights.d
+	title = purge_your_vassal_policy_menu_events.2.t
+	desc = purge_your_vassal_policy_menu_events.2.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
