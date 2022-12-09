@@ -27,6 +27,7 @@ purge_your_vassal_policy_menu3_taxation.1 = {
     
     option = {
         name = purge_your_vassal_policy_menu3_taxation_events.1.choose.1
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_consumption_based_taxation
         }
@@ -35,6 +36,7 @@ purge_your_vassal_policy_menu3_taxation.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_taxation_events.1.choose.2
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_land_based_taxation
         }
@@ -43,6 +45,7 @@ purge_your_vassal_policy_menu3_taxation.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_taxation_events.1.choose.3
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_per_capita_based_taxation
         }
@@ -51,6 +54,7 @@ purge_your_vassal_policy_menu3_taxation.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_taxation_events.1.choose.4
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_proportional_taxation
         }
@@ -59,6 +63,7 @@ purge_your_vassal_policy_menu3_taxation.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_taxation_events.1.choose.5
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_graduated_taxation
         }

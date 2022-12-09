@@ -27,6 +27,7 @@ purge_your_vassal_policy_menu3_army_model.1 = {
     
     option = {
         name = purge_your_vassal_policy_menu3_army_model_events.1.choose.1
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_peasant_levies
         }
@@ -35,6 +36,7 @@ purge_your_vassal_policy_menu3_army_model.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_army_model_events.1.choose.2
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_professional_army
         }
@@ -43,6 +45,7 @@ purge_your_vassal_policy_menu3_army_model.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_army_model_events.1.choose.3
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_national_militia
         }
@@ -51,6 +54,7 @@ purge_your_vassal_policy_menu3_army_model.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_army_model_events.1.choose.4
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_mass_conscription
         }

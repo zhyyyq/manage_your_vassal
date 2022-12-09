@@ -27,6 +27,7 @@ purge_your_vassal_policy_menu3_colonial_affairs.1 = {
     
     option = {
         name = purge_your_vassal_policy_menu3_colonial_affairs_events.1.choose.1
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_no_colonial_affairs
         }
@@ -35,6 +36,7 @@ purge_your_vassal_policy_menu3_colonial_affairs.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_colonial_affairs_events.1.choose.2
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_colonial_resettlement
         }
@@ -43,6 +45,7 @@ purge_your_vassal_policy_menu3_colonial_affairs.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_colonial_affairs_events.1.choose.3
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_colonial_exploitation
         }

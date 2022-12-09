@@ -27,6 +27,7 @@ purge_your_vassal_policy_menu3_migration.1 = {
     
     option = {
         name = purge_your_vassal_policy_menu3_migration_events.1.choose.1
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_no_migration_controls
         }
@@ -35,6 +36,7 @@ purge_your_vassal_policy_menu3_migration.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_migration_events.1.choose.2
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_migration_controls
         }
@@ -43,6 +45,7 @@ purge_your_vassal_policy_menu3_migration.1 = {
 
     option = {
         name = purge_your_vassal_policy_menu3_migration_events.1.choose.3
+        remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_closed_borders
         }
