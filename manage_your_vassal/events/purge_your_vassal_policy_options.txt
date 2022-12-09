@@ -1,6 +1,6 @@
 namespace = purge_your_vassal_policy_options
 
-purge_your_vassal_policy_power_structure_army_model.1 = {
+purge_your_vassal_policy_army_model.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -8,8 +8,8 @@ purge_your_vassal_policy_power_structure_army_model.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_power_structure_army_model_events.1.t
-	desc = purge_your_vassal_policy_power_structure_army_model_events.1.d
+	title = purge_your_vassal_policy_army_model_events.1.t
+	desc = purge_your_vassal_policy_army_model_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -26,7 +26,7 @@ purge_your_vassal_policy_power_structure_army_model.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.power_structure_army_model.events.1.choose.0
+        name = purge_your_vassal_policy_army_model.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_peasant_levies
         }
@@ -34,7 +34,7 @@ purge_your_vassal_policy_power_structure_army_model.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_army_model.events.1.choose.1
+        name = purge_your_vassal_policy_army_model.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_professional_army
         }
@@ -42,7 +42,7 @@ purge_your_vassal_policy_power_structure_army_model.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_army_model.events.1.choose.2
+        name = purge_your_vassal_policy_army_model.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_national_militia
         }
@@ -50,7 +50,7 @@ purge_your_vassal_policy_power_structure_army_model.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_army_model.events.1.choose.3
+        name = purge_your_vassal_policy_army_model.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_mass_conscription
         }
@@ -63,7 +63,7 @@ purge_your_vassal_policy_power_structure_army_model.1 = {
 	}
 }
 
-purge_your_vassal_policy_power_structure_bureaucracy.1 = {
+purge_your_vassal_policy_bureaucracy.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -71,8 +71,8 @@ purge_your_vassal_policy_power_structure_bureaucracy.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_power_structure_bureaucracy_events.1.t
-	desc = purge_your_vassal_policy_power_structure_bureaucracy_events.1.d
+	title = purge_your_vassal_policy_bureaucracy_events.1.t
+	desc = purge_your_vassal_policy_bureaucracy_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -89,7 +89,7 @@ purge_your_vassal_policy_power_structure_bureaucracy.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.power_structure_bureaucracy.events.1.choose.0
+        name = purge_your_vassal_policy_bureaucracy.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_hereditary_bureaucrats
         }
@@ -97,7 +97,7 @@ purge_your_vassal_policy_power_structure_bureaucracy.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_bureaucracy.events.1.choose.1
+        name = purge_your_vassal_policy_bureaucracy.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_appointed_bureaucrats
         }
@@ -105,7 +105,7 @@ purge_your_vassal_policy_power_structure_bureaucracy.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_bureaucracy.events.1.choose.2
+        name = purge_your_vassal_policy_bureaucracy.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_elected_bureaucrats
         }
@@ -118,7 +118,7 @@ purge_your_vassal_policy_power_structure_bureaucracy.1 = {
 	}
 }
 
-purge_your_vassal_policy_human_rights_childrens_rights.1 = {
+purge_your_vassal_policy_childrens_rights.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -126,8 +126,8 @@ purge_your_vassal_policy_human_rights_childrens_rights.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_human_rights_childrens_rights_events.1.t
-	desc = purge_your_vassal_policy_human_rights_childrens_rights_events.1.d
+	title = purge_your_vassal_policy_childrens_rights_events.1.t
+	desc = purge_your_vassal_policy_childrens_rights_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -144,7 +144,7 @@ purge_your_vassal_policy_human_rights_childrens_rights.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.human_rights_childrens_rights.events.1.choose.0
+        name = purge_your_vassal_policy_childrens_rights.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_child_labor_allowed
         }
@@ -152,7 +152,7 @@ purge_your_vassal_policy_human_rights_childrens_rights.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_childrens_rights.events.1.choose.1
+        name = purge_your_vassal_policy_childrens_rights.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_restricted_child_labor
         }
@@ -160,7 +160,7 @@ purge_your_vassal_policy_human_rights_childrens_rights.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_childrens_rights.events.1.choose.2
+        name = purge_your_vassal_policy_childrens_rights.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_compulsory_primary_school
         }
@@ -173,7 +173,7 @@ purge_your_vassal_policy_human_rights_childrens_rights.1 = {
 	}
 }
 
-purge_your_vassal_policy_power_structure_church_and_state.1 = {
+purge_your_vassal_policy_church_and_state.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -181,8 +181,8 @@ purge_your_vassal_policy_power_structure_church_and_state.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_power_structure_church_and_state_events.1.t
-	desc = purge_your_vassal_policy_power_structure_church_and_state_events.1.d
+	title = purge_your_vassal_policy_church_and_state_events.1.t
+	desc = purge_your_vassal_policy_church_and_state_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -199,7 +199,7 @@ purge_your_vassal_policy_power_structure_church_and_state.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.power_structure_church_and_state.events.1.choose.0
+        name = purge_your_vassal_policy_church_and_state.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_state_religion
         }
@@ -207,7 +207,7 @@ purge_your_vassal_policy_power_structure_church_and_state.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_church_and_state.events.1.choose.1
+        name = purge_your_vassal_policy_church_and_state.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_freedom_of_conscience
         }
@@ -215,7 +215,7 @@ purge_your_vassal_policy_power_structure_church_and_state.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_church_and_state.events.1.choose.2
+        name = purge_your_vassal_policy_church_and_state.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_total_separation
         }
@@ -228,7 +228,7 @@ purge_your_vassal_policy_power_structure_church_and_state.1 = {
 	}
 }
 
-purge_your_vassal_policy_power_structure_citizenship.1 = {
+purge_your_vassal_policy_citizenship.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -236,8 +236,8 @@ purge_your_vassal_policy_power_structure_citizenship.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_power_structure_citizenship_events.1.t
-	desc = purge_your_vassal_policy_power_structure_citizenship_events.1.d
+	title = purge_your_vassal_policy_citizenship_events.1.t
+	desc = purge_your_vassal_policy_citizenship_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -254,7 +254,7 @@ purge_your_vassal_policy_power_structure_citizenship.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.power_structure_citizenship.events.1.choose.0
+        name = purge_your_vassal_policy_citizenship.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_ethnostate
         }
@@ -262,7 +262,7 @@ purge_your_vassal_policy_power_structure_citizenship.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_citizenship.events.1.choose.1
+        name = purge_your_vassal_policy_citizenship.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_national_supremacy
         }
@@ -270,7 +270,7 @@ purge_your_vassal_policy_power_structure_citizenship.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_citizenship.events.1.choose.2
+        name = purge_your_vassal_policy_citizenship.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_racial_segregation
         }
@@ -278,7 +278,7 @@ purge_your_vassal_policy_power_structure_citizenship.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_citizenship.events.1.choose.3
+        name = purge_your_vassal_policy_citizenship.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_cultural_exclusion
         }
@@ -286,7 +286,7 @@ purge_your_vassal_policy_power_structure_citizenship.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_citizenship.events.1.choose.4
+        name = purge_your_vassal_policy_citizenship.events.1.choose.4
         scope:target_country = {
             activate_law = law_type:law_multicultural
         }
@@ -299,7 +299,7 @@ purge_your_vassal_policy_power_structure_citizenship.1 = {
 	}
 }
 
-purge_your_vassal_policy_economy_colonial_affairs.1 = {
+purge_your_vassal_policy_colonial_affairs.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -307,8 +307,8 @@ purge_your_vassal_policy_economy_colonial_affairs.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_economy_colonial_affairs_events.1.t
-	desc = purge_your_vassal_policy_economy_colonial_affairs_events.1.d
+	title = purge_your_vassal_policy_colonial_affairs_events.1.t
+	desc = purge_your_vassal_policy_colonial_affairs_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -325,7 +325,7 @@ purge_your_vassal_policy_economy_colonial_affairs.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.economy_colonial_affairs.events.1.choose.0
+        name = purge_your_vassal_policy_colonial_affairs.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_colonial_affairs
         }
@@ -333,7 +333,7 @@ purge_your_vassal_policy_economy_colonial_affairs.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_colonial_affairs.events.1.choose.1
+        name = purge_your_vassal_policy_colonial_affairs.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_colonial_resettlement
         }
@@ -341,7 +341,7 @@ purge_your_vassal_policy_economy_colonial_affairs.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_colonial_affairs.events.1.choose.2
+        name = purge_your_vassal_policy_colonial_affairs.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_colonial_exploitation
         }
@@ -354,7 +354,7 @@ purge_your_vassal_policy_economy_colonial_affairs.1 = {
 	}
 }
 
-purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
+purge_your_vassal_policy_distribution_of_power.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -362,8 +362,8 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_power_structure_distribution_of_power_events.1.t
-	desc = purge_your_vassal_policy_power_structure_distribution_of_power_events.1.d
+	title = purge_your_vassal_policy_distribution_of_power_events.1.t
+	desc = purge_your_vassal_policy_distribution_of_power_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -380,7 +380,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.0
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_autocracy
         }
@@ -388,7 +388,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.1
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_oligarchy
         }
@@ -396,7 +396,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.2
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_elder_council
         }
@@ -404,7 +404,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.3
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_landed_voting
         }
@@ -412,7 +412,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.4
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.4
         scope:target_country = {
             activate_law = law_type:law_wealth_voting
         }
@@ -420,7 +420,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.5
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.5
         scope:target_country = {
             activate_law = law_type:law_census_voting
         }
@@ -428,7 +428,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.6
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.6
         scope:target_country = {
             activate_law = law_type:law_universal_suffrage
         }
@@ -436,7 +436,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_distribution_of_power.events.1.choose.7
+        name = purge_your_vassal_policy_distribution_of_power.events.1.choose.7
         scope:target_country = {
             activate_law = law_type:law_anarchy
         }
@@ -449,7 +449,7 @@ purge_your_vassal_policy_power_structure_distribution_of_power.1 = {
 	}
 }
 
-purge_your_vassal_policy_economy_economic_system.1 = {
+purge_your_vassal_policy_economic_system.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -457,8 +457,8 @@ purge_your_vassal_policy_economy_economic_system.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_economy_economic_system_events.1.t
-	desc = purge_your_vassal_policy_economy_economic_system_events.1.d
+	title = purge_your_vassal_policy_economic_system_events.1.t
+	desc = purge_your_vassal_policy_economic_system_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -475,7 +475,7 @@ purge_your_vassal_policy_economy_economic_system.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.economy_economic_system.events.1.choose.0
+        name = purge_your_vassal_policy_economic_system.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_traditionalism
         }
@@ -483,7 +483,7 @@ purge_your_vassal_policy_economy_economic_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_economic_system.events.1.choose.1
+        name = purge_your_vassal_policy_economic_system.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_interventionism
         }
@@ -491,7 +491,7 @@ purge_your_vassal_policy_economy_economic_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_economic_system.events.1.choose.2
+        name = purge_your_vassal_policy_economic_system.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_agrarianism
         }
@@ -499,7 +499,7 @@ purge_your_vassal_policy_economy_economic_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_economic_system.events.1.choose.3
+        name = purge_your_vassal_policy_economic_system.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_laissez_faire
         }
@@ -507,7 +507,7 @@ purge_your_vassal_policy_economy_economic_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_economic_system.events.1.choose.4
+        name = purge_your_vassal_policy_economic_system.events.1.choose.4
         scope:target_country = {
             activate_law = law_type:law_command_economy
         }
@@ -520,7 +520,7 @@ purge_your_vassal_policy_economy_economic_system.1 = {
 	}
 }
 
-purge_your_vassal_policy_economy_education_system.1 = {
+purge_your_vassal_policy_education_system.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -528,8 +528,8 @@ purge_your_vassal_policy_economy_education_system.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_economy_education_system_events.1.t
-	desc = purge_your_vassal_policy_economy_education_system_events.1.d
+	title = purge_your_vassal_policy_education_system_events.1.t
+	desc = purge_your_vassal_policy_education_system_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -546,7 +546,7 @@ purge_your_vassal_policy_economy_education_system.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.economy_education_system.events.1.choose.0
+        name = purge_your_vassal_policy_education_system.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_schools
         }
@@ -554,7 +554,7 @@ purge_your_vassal_policy_economy_education_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_education_system.events.1.choose.1
+        name = purge_your_vassal_policy_education_system.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_religious_schools
         }
@@ -562,7 +562,7 @@ purge_your_vassal_policy_economy_education_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_education_system.events.1.choose.2
+        name = purge_your_vassal_policy_education_system.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_private_schools
         }
@@ -570,7 +570,7 @@ purge_your_vassal_policy_economy_education_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_education_system.events.1.choose.3
+        name = purge_your_vassal_policy_education_system.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_public_schools
         }
@@ -583,7 +583,7 @@ purge_your_vassal_policy_economy_education_system.1 = {
 	}
 }
 
-purge_your_vassal_policy_human_rights_free_speech.1 = {
+purge_your_vassal_policy_free_speech.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -591,8 +591,8 @@ purge_your_vassal_policy_human_rights_free_speech.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_human_rights_free_speech_events.1.t
-	desc = purge_your_vassal_policy_human_rights_free_speech_events.1.d
+	title = purge_your_vassal_policy_free_speech_events.1.t
+	desc = purge_your_vassal_policy_free_speech_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -609,7 +609,7 @@ purge_your_vassal_policy_human_rights_free_speech.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.human_rights_free_speech.events.1.choose.0
+        name = purge_your_vassal_policy_free_speech.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_outlawed_dissent
         }
@@ -617,7 +617,7 @@ purge_your_vassal_policy_human_rights_free_speech.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_free_speech.events.1.choose.1
+        name = purge_your_vassal_policy_free_speech.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_censorship
         }
@@ -625,7 +625,7 @@ purge_your_vassal_policy_human_rights_free_speech.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_free_speech.events.1.choose.2
+        name = purge_your_vassal_policy_free_speech.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_right_of_assembly
         }
@@ -633,7 +633,7 @@ purge_your_vassal_policy_human_rights_free_speech.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_free_speech.events.1.choose.3
+        name = purge_your_vassal_policy_free_speech.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_protected_speech
         }
@@ -646,7 +646,7 @@ purge_your_vassal_policy_human_rights_free_speech.1 = {
 	}
 }
 
-purge_your_vassal_policy_power_structure_governance_principles.1 = {
+purge_your_vassal_policy_governance_principles.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -654,8 +654,8 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_power_structure_governance_principles_events.1.t
-	desc = purge_your_vassal_policy_power_structure_governance_principles_events.1.d
+	title = purge_your_vassal_policy_governance_principles_events.1.t
+	desc = purge_your_vassal_policy_governance_principles_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -672,7 +672,7 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.power_structure_governance_principles.events.1.choose.0
+        name = purge_your_vassal_policy_governance_principles.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_chiefdom
         }
@@ -680,7 +680,7 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_governance_principles.events.1.choose.1
+        name = purge_your_vassal_policy_governance_principles.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_monarchy
         }
@@ -688,7 +688,7 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_governance_principles.events.1.choose.2
+        name = purge_your_vassal_policy_governance_principles.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_presidential_republic
         }
@@ -696,7 +696,7 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_governance_principles.events.1.choose.3
+        name = purge_your_vassal_policy_governance_principles.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_parliamentary_republic
         }
@@ -704,7 +704,7 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_governance_principles.events.1.choose.4
+        name = purge_your_vassal_policy_governance_principles.events.1.choose.4
         scope:target_country = {
             activate_law = law_type:law_theocracy
         }
@@ -712,7 +712,7 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_governance_principles.events.1.choose.5
+        name = purge_your_vassal_policy_governance_principles.events.1.choose.5
         scope:target_country = {
             activate_law = law_type:law_council_republic
         }
@@ -725,7 +725,7 @@ purge_your_vassal_policy_power_structure_governance_principles.1 = {
 	}
 }
 
-purge_your_vassal_policy_economy_health_system.1 = {
+purge_your_vassal_policy_health_system.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -733,8 +733,8 @@ purge_your_vassal_policy_economy_health_system.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_economy_health_system_events.1.t
-	desc = purge_your_vassal_policy_economy_health_system_events.1.d
+	title = purge_your_vassal_policy_health_system_events.1.t
+	desc = purge_your_vassal_policy_health_system_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -751,7 +751,7 @@ purge_your_vassal_policy_economy_health_system.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.economy_health_system.events.1.choose.0
+        name = purge_your_vassal_policy_health_system.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_health_system
         }
@@ -759,7 +759,7 @@ purge_your_vassal_policy_economy_health_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_health_system.events.1.choose.1
+        name = purge_your_vassal_policy_health_system.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_charitable_health_system
         }
@@ -767,7 +767,7 @@ purge_your_vassal_policy_economy_health_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_health_system.events.1.choose.2
+        name = purge_your_vassal_policy_health_system.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_private_health_insurance
         }
@@ -775,7 +775,7 @@ purge_your_vassal_policy_economy_health_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_health_system.events.1.choose.3
+        name = purge_your_vassal_policy_health_system.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_public_health_insurance
         }
@@ -788,7 +788,7 @@ purge_your_vassal_policy_economy_health_system.1 = {
 	}
 }
 
-purge_your_vassal_policy_power_structure_internal_security.1 = {
+purge_your_vassal_policy_internal_security.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -796,8 +796,8 @@ purge_your_vassal_policy_power_structure_internal_security.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_power_structure_internal_security_events.1.t
-	desc = purge_your_vassal_policy_power_structure_internal_security_events.1.d
+	title = purge_your_vassal_policy_internal_security_events.1.t
+	desc = purge_your_vassal_policy_internal_security_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -814,7 +814,7 @@ purge_your_vassal_policy_power_structure_internal_security.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.power_structure_internal_security.events.1.choose.0
+        name = purge_your_vassal_policy_internal_security.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_home_affairs
         }
@@ -822,7 +822,7 @@ purge_your_vassal_policy_power_structure_internal_security.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_internal_security.events.1.choose.1
+        name = purge_your_vassal_policy_internal_security.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_national_guard
         }
@@ -830,7 +830,7 @@ purge_your_vassal_policy_power_structure_internal_security.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_internal_security.events.1.choose.2
+        name = purge_your_vassal_policy_internal_security.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_secret_police
         }
@@ -838,7 +838,7 @@ purge_your_vassal_policy_power_structure_internal_security.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.power_structure_internal_security.events.1.choose.3
+        name = purge_your_vassal_policy_internal_security.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_guaranteed_liberties
         }
@@ -851,7 +851,7 @@ purge_your_vassal_policy_power_structure_internal_security.1 = {
 	}
 }
 
-purge_your_vassal_policy_human_rights_labor_rights.1 = {
+purge_your_vassal_policy_labor_rights.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -859,8 +859,8 @@ purge_your_vassal_policy_human_rights_labor_rights.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_human_rights_labor_rights_events.1.t
-	desc = purge_your_vassal_policy_human_rights_labor_rights_events.1.d
+	title = purge_your_vassal_policy_labor_rights_events.1.t
+	desc = purge_your_vassal_policy_labor_rights_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -877,7 +877,7 @@ purge_your_vassal_policy_human_rights_labor_rights.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.human_rights_labor_rights.events.1.choose.0
+        name = purge_your_vassal_policy_labor_rights.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_serfdom_banned
         }
@@ -885,7 +885,7 @@ purge_your_vassal_policy_human_rights_labor_rights.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_labor_rights.events.1.choose.1
+        name = purge_your_vassal_policy_labor_rights.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_serfdom
         }
@@ -893,7 +893,7 @@ purge_your_vassal_policy_human_rights_labor_rights.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_labor_rights.events.1.choose.2
+        name = purge_your_vassal_policy_labor_rights.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_regulatory_bodies
         }
@@ -901,7 +901,7 @@ purge_your_vassal_policy_human_rights_labor_rights.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_labor_rights.events.1.choose.3
+        name = purge_your_vassal_policy_labor_rights.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_worker_protections
         }
@@ -914,7 +914,7 @@ purge_your_vassal_policy_human_rights_labor_rights.1 = {
 	}
 }
 
-purge_your_vassal_policy_human_rights_migration.1 = {
+purge_your_vassal_policy_migration.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -922,8 +922,8 @@ purge_your_vassal_policy_human_rights_migration.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_human_rights_migration_events.1.t
-	desc = purge_your_vassal_policy_human_rights_migration_events.1.d
+	title = purge_your_vassal_policy_migration_events.1.t
+	desc = purge_your_vassal_policy_migration_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -940,7 +940,7 @@ purge_your_vassal_policy_human_rights_migration.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.human_rights_migration.events.1.choose.0
+        name = purge_your_vassal_policy_migration.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_migration_controls
         }
@@ -948,7 +948,7 @@ purge_your_vassal_policy_human_rights_migration.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_migration.events.1.choose.1
+        name = purge_your_vassal_policy_migration.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_migration_controls
         }
@@ -956,7 +956,7 @@ purge_your_vassal_policy_human_rights_migration.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_migration.events.1.choose.2
+        name = purge_your_vassal_policy_migration.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_closed_borders
         }
@@ -969,7 +969,7 @@ purge_your_vassal_policy_human_rights_migration.1 = {
 	}
 }
 
-purge_your_vassal_policy_economy_policing.1 = {
+purge_your_vassal_policy_policing.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -977,8 +977,8 @@ purge_your_vassal_policy_economy_policing.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_economy_policing_events.1.t
-	desc = purge_your_vassal_policy_economy_policing_events.1.d
+	title = purge_your_vassal_policy_policing_events.1.t
+	desc = purge_your_vassal_policy_policing_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -995,7 +995,7 @@ purge_your_vassal_policy_economy_policing.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.economy_policing.events.1.choose.0
+        name = purge_your_vassal_policy_policing.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_police
         }
@@ -1003,7 +1003,7 @@ purge_your_vassal_policy_economy_policing.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_policing.events.1.choose.1
+        name = purge_your_vassal_policy_policing.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_local_police
         }
@@ -1011,7 +1011,7 @@ purge_your_vassal_policy_economy_policing.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_policing.events.1.choose.2
+        name = purge_your_vassal_policy_policing.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_dedicated_police
         }
@@ -1019,7 +1019,7 @@ purge_your_vassal_policy_economy_policing.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_policing.events.1.choose.3
+        name = purge_your_vassal_policy_policing.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_militarized_police
         }
@@ -1032,7 +1032,7 @@ purge_your_vassal_policy_economy_policing.1 = {
 	}
 }
 
-purge_your_vassal_policy_human_rights_rights_of_women.1 = {
+purge_your_vassal_policy_rights_of_women.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -1040,8 +1040,8 @@ purge_your_vassal_policy_human_rights_rights_of_women.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_human_rights_rights_of_women_events.1.t
-	desc = purge_your_vassal_policy_human_rights_rights_of_women_events.1.d
+	title = purge_your_vassal_policy_rights_of_women_events.1.t
+	desc = purge_your_vassal_policy_rights_of_women_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -1058,7 +1058,7 @@ purge_your_vassal_policy_human_rights_rights_of_women.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.human_rights_rights_of_women.events.1.choose.0
+        name = purge_your_vassal_policy_rights_of_women.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_womens_rights
         }
@@ -1066,7 +1066,7 @@ purge_your_vassal_policy_human_rights_rights_of_women.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_rights_of_women.events.1.choose.1
+        name = purge_your_vassal_policy_rights_of_women.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_women_own_property
         }
@@ -1074,7 +1074,7 @@ purge_your_vassal_policy_human_rights_rights_of_women.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_rights_of_women.events.1.choose.2
+        name = purge_your_vassal_policy_rights_of_women.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_women_in_the_workplace
         }
@@ -1082,7 +1082,7 @@ purge_your_vassal_policy_human_rights_rights_of_women.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_rights_of_women.events.1.choose.3
+        name = purge_your_vassal_policy_rights_of_women.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_womens_suffrage
         }
@@ -1095,7 +1095,7 @@ purge_your_vassal_policy_human_rights_rights_of_women.1 = {
 	}
 }
 
-purge_your_vassal_policy_human_rights_slavery.1 = {
+purge_your_vassal_policy_slavery.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -1103,8 +1103,8 @@ purge_your_vassal_policy_human_rights_slavery.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_human_rights_slavery_events.1.t
-	desc = purge_your_vassal_policy_human_rights_slavery_events.1.d
+	title = purge_your_vassal_policy_slavery_events.1.t
+	desc = purge_your_vassal_policy_slavery_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -1121,7 +1121,7 @@ purge_your_vassal_policy_human_rights_slavery.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.human_rights_slavery.events.1.choose.0
+        name = purge_your_vassal_policy_slavery.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_slavery_banned
         }
@@ -1129,7 +1129,7 @@ purge_your_vassal_policy_human_rights_slavery.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_slavery.events.1.choose.1
+        name = purge_your_vassal_policy_slavery.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_debt_slavery
         }
@@ -1137,7 +1137,7 @@ purge_your_vassal_policy_human_rights_slavery.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_slavery.events.1.choose.2
+        name = purge_your_vassal_policy_slavery.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_slave_trade
         }
@@ -1145,7 +1145,7 @@ purge_your_vassal_policy_human_rights_slavery.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_slavery.events.1.choose.3
+        name = purge_your_vassal_policy_slavery.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_legacy_slavery
         }
@@ -1158,7 +1158,7 @@ purge_your_vassal_policy_human_rights_slavery.1 = {
 	}
 }
 
-purge_your_vassal_policy_economy_taxation.1 = {
+purge_your_vassal_policy_taxation.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -1166,8 +1166,8 @@ purge_your_vassal_policy_economy_taxation.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_economy_taxation_events.1.t
-	desc = purge_your_vassal_policy_economy_taxation_events.1.d
+	title = purge_your_vassal_policy_taxation_events.1.t
+	desc = purge_your_vassal_policy_taxation_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -1184,7 +1184,7 @@ purge_your_vassal_policy_economy_taxation.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.economy_taxation.events.1.choose.0
+        name = purge_your_vassal_policy_taxation.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_consumption_based_taxation
         }
@@ -1192,7 +1192,7 @@ purge_your_vassal_policy_economy_taxation.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_taxation.events.1.choose.1
+        name = purge_your_vassal_policy_taxation.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_land_based_taxation
         }
@@ -1200,7 +1200,7 @@ purge_your_vassal_policy_economy_taxation.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_taxation.events.1.choose.2
+        name = purge_your_vassal_policy_taxation.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_per_capita_based_taxation
         }
@@ -1208,7 +1208,7 @@ purge_your_vassal_policy_economy_taxation.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_taxation.events.1.choose.3
+        name = purge_your_vassal_policy_taxation.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_proportional_taxation
         }
@@ -1216,7 +1216,7 @@ purge_your_vassal_policy_economy_taxation.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_taxation.events.1.choose.4
+        name = purge_your_vassal_policy_taxation.events.1.choose.4
         scope:target_country = {
             activate_law = law_type:law_graduated_taxation
         }
@@ -1229,7 +1229,7 @@ purge_your_vassal_policy_economy_taxation.1 = {
 	}
 }
 
-purge_your_vassal_policy_economy_trade_policy.1 = {
+purge_your_vassal_policy_trade_policy.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -1237,8 +1237,8 @@ purge_your_vassal_policy_economy_trade_policy.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_economy_trade_policy_events.1.t
-	desc = purge_your_vassal_policy_economy_trade_policy_events.1.d
+	title = purge_your_vassal_policy_trade_policy_events.1.t
+	desc = purge_your_vassal_policy_trade_policy_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -1255,7 +1255,7 @@ purge_your_vassal_policy_economy_trade_policy.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.economy_trade_policy.events.1.choose.0
+        name = purge_your_vassal_policy_trade_policy.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_mercantilism
         }
@@ -1263,7 +1263,7 @@ purge_your_vassal_policy_economy_trade_policy.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_trade_policy.events.1.choose.1
+        name = purge_your_vassal_policy_trade_policy.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_protectionism
         }
@@ -1271,7 +1271,7 @@ purge_your_vassal_policy_economy_trade_policy.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_trade_policy.events.1.choose.2
+        name = purge_your_vassal_policy_trade_policy.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_free_trade
         }
@@ -1279,7 +1279,7 @@ purge_your_vassal_policy_economy_trade_policy.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.economy_trade_policy.events.1.choose.3
+        name = purge_your_vassal_policy_trade_policy.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_isolationism
         }
@@ -1292,7 +1292,7 @@ purge_your_vassal_policy_economy_trade_policy.1 = {
 	}
 }
 
-purge_your_vassal_policy_human_rights_welfare.1 = {
+purge_your_vassal_policy_welfare.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -1300,8 +1300,8 @@ purge_your_vassal_policy_human_rights_welfare.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_human_rights_welfare_events.1.t
-	desc = purge_your_vassal_policy_human_rights_welfare_events.1.d
+	title = purge_your_vassal_policy_welfare_events.1.t
+	desc = purge_your_vassal_policy_welfare_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -1318,7 +1318,7 @@ purge_your_vassal_policy_human_rights_welfare.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy.human_rights_welfare.events.1.choose.0
+        name = purge_your_vassal_policy_welfare.events.1.choose.0
         scope:target_country = {
             activate_law = law_type:law_no_social_security
         }
@@ -1326,7 +1326,7 @@ purge_your_vassal_policy_human_rights_welfare.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_welfare.events.1.choose.1
+        name = purge_your_vassal_policy_welfare.events.1.choose.1
         scope:target_country = {
             activate_law = law_type:law_poor_laws
         }
@@ -1334,7 +1334,7 @@ purge_your_vassal_policy_human_rights_welfare.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_welfare.events.1.choose.2
+        name = purge_your_vassal_policy_welfare.events.1.choose.2
         scope:target_country = {
             activate_law = law_type:law_wage_subsidies
         }
@@ -1342,7 +1342,7 @@ purge_your_vassal_policy_human_rights_welfare.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy.human_rights_welfare.events.1.choose.3
+        name = purge_your_vassal_policy_welfare.events.1.choose.3
         scope:target_country = {
             activate_law = law_type:law_old_age_pension
         }

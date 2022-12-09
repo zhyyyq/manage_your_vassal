@@ -25,44 +25,44 @@ purge_your_vassal_policy_menu.power_structure = {
 	}
     
     option = {
-        name = purge_your_vassal_policy_power_structure_events.choose.governance_principles
-        trigger_event = { id = purge_your_vassal_policy_power_structure_governance_principles.1 popup = yes }
+        name = purge_your_vassal_policy_power_structure_events.choose.0
+        trigger_event = { id = purge_your_vassal_policy_governance_principles.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_power_structure_events.choose.distribution_of_power
-        trigger_event = { id = purge_your_vassal_policy_power_structure_distribution_of_power.1 popup = yes }
+        name = purge_your_vassal_policy_power_structure_events.choose.1
+        trigger_event = { id = purge_your_vassal_policy_distribution_of_power.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_power_structure_events.choose.citizenship
-        trigger_event = { id = purge_your_vassal_policy_power_structure_citizenship.1 popup = yes }
+        name = purge_your_vassal_policy_power_structure_events.choose.2
+        trigger_event = { id = purge_your_vassal_policy_citizenship.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_power_structure_events.choose.church_and_state
-        trigger_event = { id = purge_your_vassal_policy_power_structure_church_and_state.1 popup = yes }
+        name = purge_your_vassal_policy_power_structure_events.choose.3
+        trigger_event = { id = purge_your_vassal_policy_church_and_state.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_power_structure_events.choose.bureaucracy
-        trigger_event = { id = purge_your_vassal_policy_power_structure_bureaucracy.1 popup = yes }
+        name = purge_your_vassal_policy_power_structure_events.choose.4
+        trigger_event = { id = purge_your_vassal_policy_bureaucracy.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_power_structure_events.choose.army_model
-        trigger_event = { id = purge_your_vassal_policy_power_structure_army_model.1 popup = yes }
+        name = purge_your_vassal_policy_power_structure_events.choose.5
+        trigger_event = { id = purge_your_vassal_policy_army_model.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_power_structure_events.choose.internal_security
-        trigger_event = { id = purge_your_vassal_policy_power_structure_internal_security.1 popup = yes }
+        name = purge_your_vassal_policy_power_structure_events.choose.6
+        trigger_event = { id = purge_your_vassal_policy_internal_security.1 popup = yes }
     }
     
 	option = {
@@ -97,44 +97,44 @@ purge_your_vassal_policy_menu.economy = {
 	}
     
     option = {
-        name = purge_your_vassal_policy_economy_events.choose.economic_system
-        trigger_event = { id = purge_your_vassal_policy_economy_economic_system.1 popup = yes }
+        name = purge_your_vassal_policy_economy_events.choose.0
+        trigger_event = { id = purge_your_vassal_policy_economic_system.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_economy_events.choose.trade_policy
-        trigger_event = { id = purge_your_vassal_policy_economy_trade_policy.1 popup = yes }
+        name = purge_your_vassal_policy_economy_events.choose.1
+        trigger_event = { id = purge_your_vassal_policy_trade_policy.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_economy_events.choose.taxation
-        trigger_event = { id = purge_your_vassal_policy_economy_taxation.1 popup = yes }
+        name = purge_your_vassal_policy_economy_events.choose.2
+        trigger_event = { id = purge_your_vassal_policy_taxation.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_economy_events.choose.colonial_affairs
-        trigger_event = { id = purge_your_vassal_policy_economy_colonial_affairs.1 popup = yes }
+        name = purge_your_vassal_policy_economy_events.choose.3
+        trigger_event = { id = purge_your_vassal_policy_colonial_affairs.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_economy_events.choose.policing
-        trigger_event = { id = purge_your_vassal_policy_economy_policing.1 popup = yes }
+        name = purge_your_vassal_policy_economy_events.choose.4
+        trigger_event = { id = purge_your_vassal_policy_policing.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_economy_events.choose.education_system
-        trigger_event = { id = purge_your_vassal_policy_economy_education_system.1 popup = yes }
+        name = purge_your_vassal_policy_economy_events.choose.5
+        trigger_event = { id = purge_your_vassal_policy_education_system.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_economy_events.choose.health_system
-        trigger_event = { id = purge_your_vassal_policy_economy_health_system.1 popup = yes }
+        name = purge_your_vassal_policy_economy_events.choose.6
+        trigger_event = { id = purge_your_vassal_policy_health_system.1 popup = yes }
     }
     
 	option = {
@@ -169,44 +169,44 @@ purge_your_vassal_policy_menu.human_rights = {
 	}
     
     option = {
-        name = purge_your_vassal_policy_human_rights_events.choose.free_speech
-        trigger_event = { id = purge_your_vassal_policy_human_rights_free_speech.1 popup = yes }
+        name = purge_your_vassal_policy_human_rights_events.choose.0
+        trigger_event = { id = purge_your_vassal_policy_free_speech.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_human_rights_events.choose.labor_rights
-        trigger_event = { id = purge_your_vassal_policy_human_rights_labor_rights.1 popup = yes }
+        name = purge_your_vassal_policy_human_rights_events.choose.1
+        trigger_event = { id = purge_your_vassal_policy_labor_rights.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_human_rights_events.choose.childrens_rights
-        trigger_event = { id = purge_your_vassal_policy_human_rights_childrens_rights.1 popup = yes }
+        name = purge_your_vassal_policy_human_rights_events.choose.2
+        trigger_event = { id = purge_your_vassal_policy_childrens_rights.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_human_rights_events.choose.rights_of_women
-        trigger_event = { id = purge_your_vassal_policy_human_rights_rights_of_women.1 popup = yes }
+        name = purge_your_vassal_policy_human_rights_events.choose.3
+        trigger_event = { id = purge_your_vassal_policy_rights_of_women.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_human_rights_events.choose.welfare
-        trigger_event = { id = purge_your_vassal_policy_human_rights_welfare.1 popup = yes }
+        name = purge_your_vassal_policy_human_rights_events.choose.4
+        trigger_event = { id = purge_your_vassal_policy_welfare.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_human_rights_events.choose.migration
-        trigger_event = { id = purge_your_vassal_policy_human_rights_migration.1 popup = yes }
+        name = purge_your_vassal_policy_human_rights_events.choose.5
+        trigger_event = { id = purge_your_vassal_policy_migration.1 popup = yes }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_human_rights_events.choose.slavery
-        trigger_event = { id = purge_your_vassal_policy_human_rights_slavery.1 popup = yes }
+        name = purge_your_vassal_policy_human_rights_events.choose.6
+        trigger_event = { id = purge_your_vassal_policy_slavery.1 popup = yes }
     }
     
 	option = {
