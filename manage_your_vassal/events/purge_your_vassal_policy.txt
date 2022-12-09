@@ -25,16 +25,16 @@ purge_your_vassal_policy.1 = {
 	immediate = {
 	}
 	option = {
-		name = purge_your_vassal_events.1.choose.1
-		trigger_event = { id = purge_your_vassal_policy_menu.1 popup = yes }
+		name = purge_your_vassal_policy.1.choose.1
+		trigger_event = { id = purge_your_vassal_policy_menu.power_structure popup = yes }
 	}
 	option = {
-		name = purge_your_vassal_events.1.choose.2
-		trigger_event = { id = purge_your_vassal_policy_2.1 popup = yes }
+		name = purge_your_vassal_policy.1.choose.2
+		trigger_event = { id = purge_your_vassal_policy_menu.economy popup = yes }
 	}
 	option = {
-		name = purge_your_vassal_events.1.choose.3
-		trigger_event = { id = purge_your_vassal_policy_3.1 popup = yes }
+		name = purge_your_vassal_policy.1.choose.3
+		trigger_event = { id = purge_your_vassal_policy_menu.human_rights popup = yes }
 	}
 	option = {
 		name = CANCEL
