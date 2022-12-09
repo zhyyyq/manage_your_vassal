@@ -29,3 +29,89 @@
 		}
 	}
 }
+
+purge_tax_high = {
+	requires_approval = no
+	should_notify_third_parties = no
+	can_select = no
+	can_select_to_break = no
+
+	potential = {
+		always = no
+	}
+	
+	pact = {	
+		is_two_sided_pact = no
+		
+		income_transfer = 0.6
+		recipient_gets_income_transfer = no
+		income_transfer_based_on_recipient = yes
+	
+		should_auto_break = {
+			always = no # Once forced duration is up
+		}
+	
+		should_invalidate = {
+			NOT = {
+				is_subject_of = ROOT
+			}
+		}	
+	}
+}
+purge_tax_middle = {
+	requires_approval = no
+	should_notify_third_parties = no
+	can_select = no
+	can_select_to_break = no
+
+	potential = {
+		always = no
+	}
+	
+	pact = {	
+		is_two_sided_pact = no
+		
+		income_transfer = 0.4
+		recipient_gets_income_transfer = no
+		income_transfer_based_on_recipient = yes
+	
+		should_auto_break = {
+			always = no # Once forced duration is up
+		}
+	
+		should_invalidate = {
+			NOT = {
+				is_subject_of = ROOT
+			}
+		}	
+	}
+}
+purge_tax_low = {
+	requires_approval = no
+	should_notify_third_parties = no
+	can_select = no
+	can_select_to_break = no
+
+	potential = {
+		always = no
+	}
+	
+	pact = {	
+		is_two_sided_pact = no
+		
+		income_transfer = 0.2
+		recipient_gets_income_transfer = no
+		income_transfer_based_on_recipient = yes
+	
+		should_auto_break = {
+			always = no # Once forced duration is up
+		}
+	
+		should_invalidate = {
+			NOT = {
+				is_subject_of = ROOT
+			}
+		}	
+	}
+}
+

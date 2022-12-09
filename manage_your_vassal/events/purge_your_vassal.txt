@@ -52,6 +52,14 @@ purge_your_vassal.1 = {
 		name = purge_your_vassal_events.1.choose.5
 		trigger_event = { id = purge_your_vassal_migration.1 popup = yes }
 	}
+	option = {
+		name = purge_your_vassal_events.1.choose.6
+		trigger_event = { id = purge_your_vassal_policy.1 popup = yes }
+	}
+	option = {
+		name = purge_your_vassal_events.1.choose.7
+		trigger_event = { id = purge_your_vassal_ruler.1 popup = yes }
+	}
 
 	option = {
 		name = CANCEL

@@ -1,0 +1,5 @@
+﻿l_english:
+ purge_your_vassal_policy_events.1.t:0 "ruler"
+ purge_your_vassal_policy_events.1.d:0 "install a puppet ruler"
+ purge_your_vassal_policy_events.1.choose.1:0 "our king of course"
+ purge_your_vassal_policy_events.1.choose.2:0 "a nobel man"

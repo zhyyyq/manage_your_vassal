@@ -1,0 +1,187 @@
+namespace = purge_your_vassal_ruler
+
+purge_your_vassal_ruler.1 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = scope:target_country
+	}
+
+	title = purge_your_vassal_ruler_events.1.t
+	desc = purge_your_vassal_ruler_events.1.d
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	immediate = {}
+	option = {
+		# make your leader theirs 
+		name = purge_your_vassal_ruler_events.1.choose.1
+		trigger = {
+			has_law = law_type:law_monarchy
+		}
+		scope:target_country = {
+			activate_law = law_type:law_monarchy
+		}
+		create_diplomatic_pact = {
+			country = scope:target_country
+			type = personal_union
+		}	
+		remove_modifier = purge_your_vassal
+	}
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.2
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_landowners
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.3
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_armed_forces
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.4
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_devout
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.5
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_industrialists
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.6
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_intelligentsia
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.7
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_petty_bourgeoisie
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.8
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_rural_folk
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+
+	option = {
+		name = purge_your_vassal_ruler_events.1.choose.9
+		trigger = {}
+		random_primary_culture = {
+			save_scope_as = rd_role_culture_1
+		}
+		scope:target_country = {
+			create_character = {
+				culture = scope:rd_role_culture_1
+				religion = root.religion
+				interest_group = ig_trade_unions
+				ruler = yes
+				save_scope_as = governor_picked
+			}
+		}
+		remove_modifier = purge_your_vassal
+	}
+	option = {
+		name = CANCEL
+		default_option = yes
+		remove_modifier = purge_your_vassal
+	}
+}

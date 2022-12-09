@@ -35,6 +35,35 @@ purge_your_vassal_tax.1 = {
 			}
 		}
 		remove_modifier = purge_your_vassal
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_middle
+				}
+			}
+
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_middle
+			}
+		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_low
+				}
+			}
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_low
+			}
+		}
+		create_diplomatic_pact = {
+			country = scope:target_country
+			type = purge_tax_high
+		}	
 		scope:target_country = {
 			if = {
 				limit = {
@@ -61,6 +90,35 @@ purge_your_vassal_tax.1 = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_high
+				}
+			}
+
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_high
+			}
+		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_low
+				}
+			}
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_low
+			}
+		}
+		create_diplomatic_pact = {
+			country = scope:target_country
+			type = purge_tax_middle
+		}	
 		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			if = {
@@ -88,6 +146,35 @@ purge_your_vassal_tax.1 = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_high
+				}
+			}
+
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_high
+			}
+		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_middle
+				}
+			}
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_middle
+			}
+		}
+		create_diplomatic_pact = {
+			country = scope:target_country
+			type = purge_tax_low
+		}	
 		remove_modifier = purge_your_vassal
 		scope:target_country = {
 			if = {
@@ -140,6 +227,43 @@ purge_your_vassal_tax.1 = {
 					has_modifier = overlord_low_taxes
 				}
 				remove_modifier = overlord_low_taxes
+			}
+		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_high
+				}
+			}
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_high
+			}
+		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_middle
+				}
+			}
+
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_middle
+			}
+		}
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = purge_tax_low
+				}
+			}
+			remove_diplomatic_pact = {
+					country = scope:target_country
+					type = purge_tax_low
 			}
 		}
 	}
