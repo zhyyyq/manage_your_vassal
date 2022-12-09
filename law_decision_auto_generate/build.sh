@@ -1,5 +1,5 @@
 #! /bin/bash
 rm -rf dist
 mkdir dist 
-mkdir -r dist/localization/english
-mkdir -r dist/localization/simp_chinese
+mkdir -p dist/localization/english
+mkdir -p dist/localization/simp_chinese
