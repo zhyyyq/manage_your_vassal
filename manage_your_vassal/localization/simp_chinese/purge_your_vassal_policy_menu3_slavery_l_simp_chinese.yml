@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+NaN purge_your_vassal_policy_menu3_slavery_events.1.t:0 "slavery policy modify"
+ purge_your_vassal_policy_menu3_slavery_events.1.d:0 "modify vassal's policy"
+ purge_your_vassal_policy_menu3_slavery_events.1.choose.1:0 "$law_slavery_banned$"
+ purge_your_vassal_policy_menu3_slavery_events.1.choose.2:0 "$law_debt_slavery$"
+ purge_your_vassal_policy_menu3_slavery_events.1.choose.3:0 "$law_slave_trade$"
+ purge_your_vassal_policy_menu3_slavery_events.1.choose.4:0 "$law_legacy_slavery$"

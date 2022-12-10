@@ -1,0 +1,8 @@
+﻿l_english:
+ purge_your_vassal_policy_menu3_rights_of_women.1:0 "rights_of_women policy modify"
+ purge_your_vassal_policy_menu3_rights_of_women_events.1.t:0 "rights_of_women policy modify"
+ purge_your_vassal_policy_menu3_rights_of_women_events.1.d:0 "modify vassal's policy"
+ purge_your_vassal_policy_menu3_rights_of_women_events.1.choose.1:0 "$law_no_womens_rights$"
+ purge_your_vassal_policy_menu3_rights_of_women_events.1.choose.2:0 "$law_women_own_property$"
+ purge_your_vassal_policy_menu3_rights_of_women_events.1.choose.3:0 "$law_women_in_the_workplace$"
+ purge_your_vassal_policy_menu3_rights_of_women_events.1.choose.4:0 "$law_womens_suffrage$"

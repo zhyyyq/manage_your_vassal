@@ -1,0 +1,8 @@
+﻿l_english:
+ purge_your_vassal_policy_menu3_labor_rights.1:0 "labor_rights policy modify"
+ purge_your_vassal_policy_menu3_labor_rights_events.1.t:0 "labor_rights policy modify"
+ purge_your_vassal_policy_menu3_labor_rights_events.1.d:0 "modify vassal's policy"
+ purge_your_vassal_policy_menu3_labor_rights_events.1.choose.1:0 "$law_serfdom_banned$"
+ purge_your_vassal_policy_menu3_labor_rights_events.1.choose.2:0 "$law_serfdom$"
+ purge_your_vassal_policy_menu3_labor_rights_events.1.choose.3:0 "$law_regulatory_bodies$"
+ purge_your_vassal_policy_menu3_labor_rights_events.1.choose.4:0 "$law_worker_protections$"

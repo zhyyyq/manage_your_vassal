@@ -1,4 +1,4 @@
-namespace = purge_your_vassal_policy_menu2
+﻿namespace = purge_your_vassal_policy_menu2
 purge_your_vassal_policy_menu2.1 = {
 	type = country_event
 	placement = ROOT
@@ -7,8 +7,8 @@ purge_your_vassal_policy_menu2.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_menu2.1.t
-	desc = purge_your_vassal_policy_menu2.1.d
+	title = purge_your_vassal_policy_menu2_events.1.t
+	desc = purge_your_vassal_policy_menu2_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -26,49 +26,49 @@ purge_your_vassal_policy_menu2.1 = {
     
     
     option = {
-        name = purge_your_vassal_policy_menu2.1.choose.1
+        name = purge_your_vassal_policy_menu2_events.1.choose.1
         trigger_event = { id = purge_your_vassal_policy_menu3_governance_principles.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.1.choose.2
+        name = purge_your_vassal_policy_menu2_events.1.choose.2
         trigger_event = { id = purge_your_vassal_policy_menu3_distribution_of_power.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.1.choose.3
+        name = purge_your_vassal_policy_menu2_events.1.choose.3
         trigger_event = { id = purge_your_vassal_policy_menu3_citizenship.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.1.choose.4
+        name = purge_your_vassal_policy_menu2_events.1.choose.4
         trigger_event = { id = purge_your_vassal_policy_menu3_church_and_state.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.1.choose.5
+        name = purge_your_vassal_policy_menu2_events.1.choose.5
         trigger_event = { id = purge_your_vassal_policy_menu3_bureaucracy.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.1.choose.6
+        name = purge_your_vassal_policy_menu2_events.1.choose.6
         trigger_event = { id = purge_your_vassal_policy_menu3_army_model.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.1.choose.7
+        name = purge_your_vassal_policy_menu2_events.1.choose.7
         trigger_event = { id = purge_your_vassal_policy_menu3_internal_security.1 popup = yes }
     }
     
@@ -86,8 +86,8 @@ purge_your_vassal_policy_menu2.2 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_menu2.2.t
-	desc = purge_your_vassal_policy_menu2.2.d
+	title = purge_your_vassal_policy_menu2_events.2.t
+	desc = purge_your_vassal_policy_menu2_events.2.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -105,49 +105,49 @@ purge_your_vassal_policy_menu2.2 = {
     
     
     option = {
-        name = purge_your_vassal_policy_menu2.2.choose.1
+        name = purge_your_vassal_policy_menu2_events.2.choose.1
         trigger_event = { id = purge_your_vassal_policy_menu3_economic_system.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.2.choose.2
+        name = purge_your_vassal_policy_menu2_events.2.choose.2
         trigger_event = { id = purge_your_vassal_policy_menu3_trade_policy.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.2.choose.3
+        name = purge_your_vassal_policy_menu2_events.2.choose.3
         trigger_event = { id = purge_your_vassal_policy_menu3_taxation.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.2.choose.4
+        name = purge_your_vassal_policy_menu2_events.2.choose.4
         trigger_event = { id = purge_your_vassal_policy_menu3_colonial_affairs.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.2.choose.5
+        name = purge_your_vassal_policy_menu2_events.2.choose.5
         trigger_event = { id = purge_your_vassal_policy_menu3_policing.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.2.choose.6
+        name = purge_your_vassal_policy_menu2_events.2.choose.6
         trigger_event = { id = purge_your_vassal_policy_menu3_education_system.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.2.choose.7
+        name = purge_your_vassal_policy_menu2_events.2.choose.7
         trigger_event = { id = purge_your_vassal_policy_menu3_health_system.1 popup = yes }
     }
     
@@ -165,8 +165,8 @@ purge_your_vassal_policy_menu2.3 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_menu2.3.t
-	desc = purge_your_vassal_policy_menu2.3.d
+	title = purge_your_vassal_policy_menu2_events.3.t
+	desc = purge_your_vassal_policy_menu2_events.3.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -184,49 +184,49 @@ purge_your_vassal_policy_menu2.3 = {
     
     
     option = {
-        name = purge_your_vassal_policy_menu2.3.choose.1
+        name = purge_your_vassal_policy_menu2_events.3.choose.1
         trigger_event = { id = purge_your_vassal_policy_menu3_free_speech.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.3.choose.2
+        name = purge_your_vassal_policy_menu2_events.3.choose.2
         trigger_event = { id = purge_your_vassal_policy_menu3_labor_rights.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.3.choose.3
+        name = purge_your_vassal_policy_menu2_events.3.choose.3
         trigger_event = { id = purge_your_vassal_policy_menu3_childrens_rights.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.3.choose.4
+        name = purge_your_vassal_policy_menu2_events.3.choose.4
         trigger_event = { id = purge_your_vassal_policy_menu3_rights_of_women.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.3.choose.5
+        name = purge_your_vassal_policy_menu2_events.3.choose.5
         trigger_event = { id = purge_your_vassal_policy_menu3_welfare.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.3.choose.6
+        name = purge_your_vassal_policy_menu2_events.3.choose.6
         trigger_event = { id = purge_your_vassal_policy_menu3_migration.1 popup = yes }
     }
     
 
     
     option = {
-        name = purge_your_vassal_policy_menu2.3.choose.7
+        name = purge_your_vassal_policy_menu2_events.3.choose.7
         trigger_event = { id = purge_your_vassal_policy_menu3_slavery.1 popup = yes }
     }
     
