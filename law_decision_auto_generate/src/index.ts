@@ -69,8 +69,8 @@ const generateMenu2 = async () => {
             const eventDetail_cn = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.d:0 "附庸政策修改"\n`;
             const optionsLocals = policy.subs.map( (item, oIndex) => (` purge_your_vassal_policy_menu2_events.${gIndex+1}.choose.${oIndex+1}:0 "$lawgroup_${item}$"`)).join('\n');
             return ({
-                eng: `${event}${eventTitle}${eventDetail}${optionsLocals}`,
-                cn: `${event_cn}${eventTitle_cn}${eventDetail_cn}${optionsLocals}`
+                eng: `${event}${eventTitle}${eventDetail}${optionsLocals}\n`,
+                cn: `${event_cn}${eventTitle_cn}${eventDetail_cn}${optionsLocals}\n`
             });
         }).reduce( (prev, cur) => {
             prev.eng += cur.eng;
