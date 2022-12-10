@@ -29,12 +29,15 @@ const handleLawFile = (fileName: string, content: string) => {
     // localization
     const fileHead_eng = "l_english:\n";
     const fileHead_simp_chinese = "l_simp_chinese:\n";
-    const event = ` purge_your_vassal_policy_menu3_${policy_name}.1:0 "${policy_name} policy modify"\n`;
-    const eventTitle = ` purge_your_vassal_policy_menu3_${policy_name}_events.1.t:0 "${policy_name} policy modify"\n`;
+    const event = ` purge_your_vassal_policy_menu3_${policy_name}.1:0 "$lawgroup_${policy_name}$ policy modify"\n`;
+    const eventTitle = ` purge_your_vassal_policy_menu3_${policy_name}_events.1.t:0 "$lawgroup_${policy_name}$ policy modify"\n`;
     const eventDetail = ` purge_your_vassal_policy_menu3_${policy_name}_events.1.d:0 "modify vassal's policy"\n`;
+    const event_cn = ` purge_your_vassal_policy_menu3_${policy_name}.1:0 "$lawgroup_${policy_name}$ 政策修改"\n`;
+    const eventTitle_cn = ` purge_your_vassal_policy_menu3_${policy_name}_events.1.t:0 "$lawgroup_${policy_name}$ 政策修改"\n`;
+    const eventDetail_cn = ` purge_your_vassal_policy_menu3_${policy_name}_events.1.d:0 "附庸政策修改"\n`;
     const optionLocals = parsedContent.map((item, index) =>  (` purge_your_vassal_policy_menu3_${policy_name}_events.1.choose.${index+1}:0 "$${item.getName()}$"`)).join('\n');
-    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/english/purge_your_vassal_policy_menu3_${policy_name}_l_english.yml`)}`, '\ufeff' + fileHead_eng + event + eventTitle + eventDetail + optionLocals);
-    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/simp_chinese/purge_your_vassal_policy_menu3_${policy_name}_l_simp_chinese.yml`)}`, '\ufeff' + fileHead_simp_chinese + + event + eventTitle + eventDetail + optionLocals );
+    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/english/purge_your_vassal_policy_menu3_${policy_name}_l_english.yml`)}`, `\ufeff${fileHead_eng}${event}${eventTitle}${eventDetail}${optionLocals}`);
+    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/simp_chinese/purge_your_vassal_policy_menu3_${policy_name}_l_simp_chinese.yml`)}`, `\ufeff${fileHead_simp_chinese}${event_cn}${eventTitle_cn}${eventDetail_cn}${optionLocals}`);
 }
 const generateMenu2 = async () => {
     const template = fs.readFileSync( path.join(__dirname,'../template/menu2_temp.txt')).toString();
@@ -59,13 +62,23 @@ const generateMenu2 = async () => {
     const optionLocals = policy_group.map( 
         (policy, gIndex) => {
             const event = ` purge_your_vassal_policy_menu2.${gIndex + 1}:0 "policy modify"\n`;
+            const event_cn = ` purge_your_vassal_policy_menu2.${gIndex + 1}:0 "政策修改"\n`;
             const eventTitle = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.t:0 "policy modify"\n`;
+            const eventTitle_cn = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.t:0 "政策修改"\n`;
             const eventDetail = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.d:0 "modify vassal's policy"\n`;
-            const optionsLocals = policy.subs.map( (item, oIndex) => (` purge_your_vassal_policy_menu2_events.${gIndex+1}.choose.${oIndex+1}:0 "${item}"`)).join('\n');
-            return event + eventTitle + eventDetail + optionsLocals;
-        }).join("\n");
-    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/english/purge_your_vassal_policy_menu2_l_english.yml`)}`, '\ufeff' + fileHead_eng + optionLocals);
-    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/simp_chinese/purge_your_vassal_policy_menu2_l_simp_chinese.yml`)}`, '\ufeff' + fileHead_simp_chinese + optionLocals );
+            const eventDetail_cn = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.d:0 "附庸政策修改"\n`;
+            const optionsLocals = policy.subs.map( (item, oIndex) => (` purge_your_vassal_policy_menu2_events.${gIndex+1}.choose.${oIndex+1}:0 "$lawgroup_${item}$"`)).join('\n');
+            return ({
+                eng: `${event}${eventTitle}${eventDetail}${optionsLocals}`,
+                cn: `${event_cn}${eventTitle_cn}${eventDetail_cn}${optionsLocals}`
+            });
+        }).reduce( (prev, cur) => {
+            prev.eng += cur.eng;
+            prev.cn += cur.cn;
+            return prev;
+        }, { eng: '', cn: ''});
+    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/english/purge_your_vassal_policy_menu2_l_english.yml`)}`, '\ufeff' + fileHead_eng + optionLocals.eng);
+    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/simp_chinese/purge_your_vassal_policy_menu2_l_simp_chinese.yml`)}`, '\ufeff' + fileHead_simp_chinese + optionLocals.cn );
 }
 const generateMenu3 = async (fileNames: string[]) => {
     fileNames.map( async file => {

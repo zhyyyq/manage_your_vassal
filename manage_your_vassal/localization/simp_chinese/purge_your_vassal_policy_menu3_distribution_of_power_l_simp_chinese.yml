@@ -1,6 +1,7 @@
 ﻿l_simp_chinese:
-NaN purge_your_vassal_policy_menu3_distribution_of_power_events.1.t:0 "distribution_of_power policy modify"
- purge_your_vassal_policy_menu3_distribution_of_power_events.1.d:0 "modify vassal's policy"
+ purge_your_vassal_policy_menu3_distribution_of_power.1:0 "$lawgroup_distribution_of_power$ 政策修改"
+ purge_your_vassal_policy_menu3_distribution_of_power_events.1.t:0 "$lawgroup_distribution_of_power$ 政策修改"
+ purge_your_vassal_policy_menu3_distribution_of_power_events.1.d:0 "附庸政策修改"
  purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.1:0 "$law_autocracy$"
  purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.2:0 "$law_oligarchy$"
  purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.3:0 "$law_elder_council$"

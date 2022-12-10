@@ -13,6 +13,8 @@
  purge_your_vassal_events.1.choose.3:0 "直接吞了"
  purge_your_vassal_events.1.choose.4:0 "税收"
  purge_your_vassal_events.1.choose.5:0 "移民"
+ purge_your_vassal_events.1.choose.6:0 "政策"
+ purge_your_vassal_events.1.choose.7:0 "统治者"
 
  purge_your_vassal_culture_events.1.t:0 "文化"
  purge_your_vassal_culture_events.1.d:0 "选择文化"
