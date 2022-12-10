@@ -25,7 +25,7 @@ const handleLawFile = (fileName: string, content: string) => {
     // generate the mod file 
     const template = fs.readFileSync( path.join(__dirname,'../template/menu3_temp.txt')).toString();
     const res = template.replace(/###policy_name###/g, policy_name).replace(/###options###/g, options);
-    fs.writeFileSync(`${path.join(__dirname,`../dist/purge_your_vassal_policy_menu3_${policy_name}.txt`)}`, res );
+    fs.writeFileSync(`${path.join(__dirname,`../dist/events/purge_your_vassal_policy_menu3_${policy_name}.txt`)}`, res );
 }
 const generateMenu2 = async () => {
     const template = fs.readFileSync( path.join(__dirname,'../template/menu2_temp.txt')).toString();
@@ -43,13 +43,13 @@ const generateMenu2 = async () => {
         return res;
     }).join('\n');
     const res = "namespace = purge_your_vassal_policy_menu2\n" + menus;
-    fs.writeFileSync(`${path.join(__dirname,`../dist/purge_your_vassal_policy_menu2.txt`)}`, res );
+    fs.writeFileSync(`${path.join(__dirname,`../dist/events/purge_your_vassal_policy_menu2.txt`)}`, res );
     // localization
     const optionLocals = policy_group.map( 
         (policy, gIndex) => {
-            const event = `purge_your_vassal_policy_menu2.${gIndex + 1}:0 "policy modify"`;
-            const eventTitle = `purge_your_vassal_policy_menu2.${gIndex + 1}.t:0 "policy modify"`;
-            const eventDetail = `purge_your_vassal_policy_menu2.${gIndex + 1}.d:0 "modify vassal's policy"`;
+            const event = `purge_your_vassal_policy_menu2.${gIndex + 1}:0 "policy modify"\n`;
+            const eventTitle = `purge_your_vassal_policy_menu2.${gIndex + 1}.t:0 "policy modify"\n`;
+            const eventDetail = `purge_your_vassal_policy_menu2.${gIndex + 1}.d:0 "modify vassal's policy"\n`;
             const optionsLocals = policy.subs.map( (item, oIndex) => (`purge_your_vassal_policy_menu2.${gIndex+1}.choose.${oIndex+1}:0 "${item}"`)).join('\n');
             return event + eventTitle + eventDetail + optionsLocals;
         }).join("\n");
