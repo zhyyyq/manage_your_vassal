@@ -25,15 +25,15 @@ purge_your_vassal_policy_menu1.1 = {
 	immediate = {
 	}
 	option = {
-		name = purge_your_vassal_policy_menu1.1.choose.0
+		name = purge_your_vassal_policy_menu1.1.choose.1
 		trigger_event = { id = purge_your_vassal_policy_menu2.1 popup = yes }
 	}
 	option = {
-		name = purge_your_vassal_policy_menu1.1.choose.1
+		name = purge_your_vassal_policy_menu1.1.choose.2
 		trigger_event = { id = purge_your_vassal_policy_menu2.2 popup = yes }
 	}
 	option = {
-		name = purge_your_vassal_policy_menu1.1.choose.2
+		name = purge_your_vassal_policy_menu1.1.choose.3
 		trigger_event = { id = purge_your_vassal_policy_menu2.3 popup = yes }
 	}
 	option = {

@@ -29,21 +29,32 @@ const handleLawFile = (fileName: string, content: string) => {
 }
 const generateMenu2 = async () => {
     const template = fs.readFileSync( path.join(__dirname,'../template/menu2_temp.txt')).toString();
-    const menus = policy_group.map( (policy, index) => {
+    const menus = policy_group.map( (policy, gIndex) => {
         const options = policy.subs.map( (item, index) => (
     `
     
     option = {
-        name = purge_your_vassal_policy_menu2_events.choose.${index+1}
+        name = purge_your_vassal_policy_menu2.${gIndex + 1}.choose.${index+1}
         trigger_event = { id = purge_your_vassal_policy_menu3_${item}.1 popup = yes }
     }
     `
     )).join('\n');
-        const res = template.replace(/###option_name###/g, ""+(index+1)).replace(/###options###/g, options);
+        const res = template.replace(/###option_name###/g, ""+(gIndex+1)).replace(/###options###/g, options);
         return res;
     }).join('\n');
     const res = "namespace = purge_your_vassal_policy_menu2\n" + menus;
     fs.writeFileSync(`${path.join(__dirname,`../dist/purge_your_vassal_policy_menu2.txt`)}`, res );
+    // localization
+    const optionLocals = policy_group.map( 
+        (policy, gIndex) => {
+            const event = `purge_your_vassal_policy_menu2.${gIndex + 1}:0 "policy modify"`;
+            const eventTitle = `purge_your_vassal_policy_menu2.${gIndex + 1}.t:0 "policy modify"`;
+            const eventDetail = `purge_your_vassal_policy_menu2.${gIndex + 1}.d:0 "modify vassal's policy"`;
+            const optionsLocals = policy.subs.map( (item, oIndex) => (`purge_your_vassal_policy_menu2.${gIndex+1}.choose.${oIndex+1}:0 "${item}"`)).join('\n');
+            return event + eventTitle + eventDetail + optionsLocals;
+        }).join("\n");
+    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/english/purge_your_vassal_policy_menu2_l_english.yml`)}`, optionLocals );
+    fs.writeFileSync(`${path.join(__dirname,`../dist/localization/simp_chinese/purge_your_vassal_policy_menu2_l_simp_chinese.yml`)}`, optionLocals );
 }
 const generateMenu3 = async (fileNames: string[]) => {
     fileNames.map( async file => {
