@@ -9,7 +9,7 @@ const game_base_dir = 'D:\\SteamLibrary\\steamapps\\common\\Victoria 3\\game\\co
 
 // handle file 
 const handleLawFile = (fileName: string, content: string) => {
-    const policy_name = policy_group.flatMap( item => item.subs).find( sub => fileName.includes(sub))|| fileName;
+    const policy_name = policy_group.flatMap( item => item.subs).find( sub => fileName.includes(sub.fileName))?.name|| fileName;
     const parsedContent = parse_file(content);
     const options = parsedContent.map( (item, index) => (
     `
@@ -47,7 +47,7 @@ const generateMenu2 = async () => {
     
     option = {
         name = purge_your_vassal_policy_menu2_events.${gIndex + 1}.choose.${index+1}
-        trigger_event = { id = purge_your_vassal_policy_menu3_${item}.1 popup = yes }
+        trigger_event = { id = purge_your_vassal_policy_menu3_${item.name}.1 popup = yes }
     }
     `
     )).join('\n');
@@ -67,7 +67,7 @@ const generateMenu2 = async () => {
             const eventTitle_cn = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.t:0 "政策修改"\n`;
             const eventDetail = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.d:0 "modify vassal's policy"\n`;
             const eventDetail_cn = ` purge_your_vassal_policy_menu2_events.${gIndex + 1}.d:0 "附庸政策修改"\n`;
-            const optionsLocals = policy.subs.map( (item, oIndex) => (` purge_your_vassal_policy_menu2_events.${gIndex+1}.choose.${oIndex+1}:0 "$lawgroup_${item}$"`)).join('\n');
+            const optionsLocals = policy.subs.map( (item, oIndex) => (` purge_your_vassal_policy_menu2_events.${gIndex+1}.choose.${oIndex+1}:0 "$lawgroup_${item.name}$"`)).join('\n');
             return ({
                 eng: `${event}${eventTitle}${eventDetail}${optionsLocals}\n`,
                 cn: `${event_cn}${eventTitle_cn}${eventDetail_cn}${optionsLocals}\n`

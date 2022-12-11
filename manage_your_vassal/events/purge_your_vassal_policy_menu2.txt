@@ -127,7 +127,7 @@ purge_your_vassal_policy_menu2.2 = {
     
     option = {
         name = purge_your_vassal_policy_menu2_events.2.choose.4
-        trigger_event = { id = purge_your_vassal_policy_menu3_colonial_affairs.1 popup = yes }
+        trigger_event = { id = purge_your_vassal_policy_menu3_colonization.1 popup = yes }
     }
     
 

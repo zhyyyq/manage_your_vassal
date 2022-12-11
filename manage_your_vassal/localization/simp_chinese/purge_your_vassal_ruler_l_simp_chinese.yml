@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ purge_your_vassal_ruler_events.1.t:0 "统治者"
+ purge_your_vassal_ruler_events.1.d:0 "扶持一个统治者"
+ purge_your_vassal_ruler_events.1.choose.1:0 "当然是[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFullName]"
+ purge_your_vassal_ruler_events.1.choose.2:0 "[GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant]"
+ purge_your_vassal_ruler_events.1.choose.3:0 "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
+ purge_your_vassal_ruler_events.1.choose.4:0 "[GetInterestGroupVariant('ig_devout',GetPlayer).GetNameWithCountryVariant]"
+ purge_your_vassal_ruler_events.1.choose.5:0 "[GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant]"
+ purge_your_vassal_ruler_events.1.choose.6:0 "[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant]"
+ purge_your_vassal_ruler_events.1.choose.7:0 "[GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant]"
+ purge_your_vassal_ruler_events.1.choose.8:0 "[GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant]"
+ purge_your_vassal_ruler_events.1.choose.9:0 "[GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant]"
