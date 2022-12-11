@@ -1,5 +1,8 @@
 ﻿l_simp_chinese:
  purge_your_vassal:0 "管理你的附庸"
+ purge_tax_high:0 "高附庸税"
+ purge_tax_middle:0 "中附庸税"
+ purge_tax_low:0 "低附庸税"
  purge_your_vassal_action_name:0 "管理你的附庸"
  purge_your_vassal_desc:0 "管理你的附庸"
  purge_your_vassal_action_notification_name:0 "管理你的附庸"

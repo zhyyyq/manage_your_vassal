@@ -52,11 +52,12 @@ purge_tax_high = {
 		}
 	
 		should_invalidate = {
-			NOT = {
-				is_subject_of = ROOT
-			}
-		}	
-	}
+			scope:target_country = {
+				NOT = { 
+					is_subject_of = ROOT
+				}
+			}	
+		}
 }
 purge_tax_middle = {
 	requires_approval = no
@@ -80,9 +81,11 @@ purge_tax_middle = {
 		}
 	
 		should_invalidate = {
-			NOT = {
-				is_subject_of = ROOT
-			}
+			scope:target_country = {
+				NOT = { 
+					is_subject_of = ROOT
+				}
+			}	
 		}	
 	}
 }
@@ -108,9 +111,11 @@ purge_tax_low = {
 		}
 	
 		should_invalidate = {
-			NOT = {
-				is_subject_of = ROOT
-			}
+			scope:target_country = {
+				NOT = { 
+					is_subject_of = ROOT
+				}
+			}	
 		}	
 	}
 }

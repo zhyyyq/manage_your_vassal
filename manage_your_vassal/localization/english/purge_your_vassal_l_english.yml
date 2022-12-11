@@ -1,5 +1,8 @@
 ﻿l_english:
  purge_your_vassal:0 "manage your vassal"
+ purge_tax_high:0 "high vassal tax"
+ purge_tax_middle:0 "middle vassal tax"
+ purge_tax_low:0 "low vassal tax"
  purge_your_vassal_action_name:0 "manage your vassal"
  purge_your_vassal_desc:0 "manage your vassal"
  purge_your_vassal_action_notification_name:0 "manage your vassal"
