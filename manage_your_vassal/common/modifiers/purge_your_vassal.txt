@@ -23,6 +23,16 @@ overlord_attract_pop = {
 }
 
 overlord_send_pop = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	state_migration_pull_mult = 0.5
+}
+
+overlord_support_build = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_expenses_add = 1200000
+}
+
+vassal_build_supported = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_construction_add = 100
 }

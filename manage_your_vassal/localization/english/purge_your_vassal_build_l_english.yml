@@ -1,0 +1,7 @@
+﻿l_english:
+ purge_your_vassal_build.1:0 "support build"
+ purge_your_vassal_build_events.1.t:0 "support build"
+ purge_your_vassal_build_events.1.d:0 "support vassal build"
+ purge_your_vassal_build_events.1.choose.1:0 "1 year"
+ purge_your_vassal_build_events.1.choose.2:0 "3 year"
+ purge_your_vassal_build_events.1.choose.3:0 "5 year"

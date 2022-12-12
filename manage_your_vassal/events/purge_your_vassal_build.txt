@@ -1,0 +1,89 @@
+﻿namespace = purge_your_vassal_build
+
+purge_your_vassal_build.1 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = scope:target_country
+	}
+
+	title = purge_your_vassal_build_events.1.t
+	desc = purge_your_vassal_build_events.1.d
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	immediate = {
+	}
+	option = {
+		name = purge_your_vassal_build_events.1.choose.1
+		trigger = {
+			NOT = {
+				has_modifier = overlord_support_build
+			}
+		}
+		remove_modifier = purge_your_vassal
+		add_modifier = {
+				name = overlord_support_build
+				months = 1
+		}
+		scope:target_country = {
+			add_modifier = {
+				name = vassal_build_supported
+				months = 12
+			}
+		}
+	}
+	option = {
+		name = purge_your_vassal_build_events.1.choose.2
+		trigger = {
+			NOT = {
+				has_modifier = overlord_support_build
+			}
+		}
+		remove_modifier = purge_your_vassal
+		add_modifier = {
+				name = overlord_support_build
+				months = 3
+		}
+		scope:target_country = {
+			add_modifier = {
+				name = vassal_build_supported
+				months = 36
+			}
+		}
+	}
+	option = {
+		name = purge_your_vassal_build_events.1.choose.3
+		trigger = {
+			NOT = {
+				has_modifier = overlord_support_build
+			}
+		}
+		remove_modifier = purge_your_vassal
+		add_modifier = {
+				name = overlord_support_build
+				months = 5
+		}
+		scope:target_country = {
+			add_modifier = {
+				name = vassal_build_supported
+				months = 60
+			}
+		}
+	}
+	option = {
+		name = CANCEL
+		default_option = yes
+		remove_modifier = purge_your_vassal
+	}
+}

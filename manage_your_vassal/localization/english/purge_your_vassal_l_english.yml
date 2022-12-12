@@ -18,7 +18,9 @@
  purge_your_vassal_events.1.choose.5:0 "migration"
  purge_your_vassal_events.1.choose.6:0 "policy"
  purge_your_vassal_events.1.choose.7:0 "ruler"
+ purge_your_vassal_events.1.choose.8:0 "next page"
 
+ purge_your_vassal_events.2.choose.1:0 "support build"
 
  purge_your_vassal_culture_events.1.t:0 "culture"
  purge_your_vassal_culture_events.1.d:0 "choose culture"

@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ purge_your_vassal_build.1:0 "资助建设"
+ purge_your_vassal_build_events.1.t:0 "资助建设"
+ purge_your_vassal_build_events.1.d:0 "资助建设"
+ purge_your_vassal_build_events.1.choose.1:0 "1 年"
+ purge_your_vassal_build_events.1.choose.2:0 "3 年"
+ purge_your_vassal_build_events.1.choose.3:0 "5 年"
