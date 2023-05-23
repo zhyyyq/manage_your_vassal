@@ -44,6 +44,10 @@ export const policy_group = [
                 fileName: 'trade_policy'
             },
             {
+                name: "land_reform",
+                fileName: "land_reform"
+            },
+            {
                 name: 'taxation',
                 fileName: 'taxation'
             },

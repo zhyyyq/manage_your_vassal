@@ -5,3 +5,4 @@
  purge_your_vassal_policy_menu3_church_and_state_events.1.choose.1:0 "$law_state_religion$"
  purge_your_vassal_policy_menu3_church_and_state_events.1.choose.2:0 "$law_freedom_of_conscience$"
  purge_your_vassal_policy_menu3_church_and_state_events.1.choose.3:0 "$law_total_separation$"
+ purge_your_vassal_policy_menu3_church_and_state_events.1.choose.4:0 "$law_state_atheism$"

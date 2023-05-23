@@ -51,6 +51,15 @@ purge_your_vassal_policy_menu3_church_and_state.1 = {
         }
     }
     
+
+    option = {
+        name = purge_your_vassal_policy_menu3_church_and_state_events.1.choose.4
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:law_state_atheism
+        }
+    }
+    
 	option = {
 		name = CANCEL
 		default_option = yes

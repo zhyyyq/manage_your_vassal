@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { policy_group } from './common';
 import { parse_file } from './utils';
-const game_base_dir = 'E:\\SteamLibrary\\steamapps\\common\\Victoria 3\\game\\common\\laws';
+const game_base_dir = 'D:\\SteamLibrary\\steamapps\\common\\Victoria 3\\game\\common\\laws';
 
 
 
@@ -89,7 +89,8 @@ const generateMenu3 = async (fileNames: string[]) => {
 
 const main = async () => {
     const dir = fs.readdirSync(game_base_dir);
-    await Promise.all([generateMenu3(dir),generateMenu2()]);
+    await generateMenu3(dir);
+    await generateMenu2();
 }
 
 main();
