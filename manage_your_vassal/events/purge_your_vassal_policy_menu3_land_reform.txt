@@ -1,6 +1,6 @@
-namespace = purge_your_vassal_policy_menu3_citizenship
+namespace = purge_your_vassal_policy_menu3_land_reform
 
-purge_your_vassal_policy_menu3_citizenship.1 = {
+purge_your_vassal_policy_menu3_land_reform.1 = {
 	type = country_event
 	placement = ROOT
 
@@ -8,8 +8,8 @@ purge_your_vassal_policy_menu3_citizenship.1 = {
 		exists = scope:target_country
 	}
 
-	title = purge_your_vassal_policy_menu3_citizenship_events.1.t
-	desc = purge_your_vassal_policy_menu3_citizenship_events.1.d
+	title = purge_your_vassal_policy_menu3_land_reform_events.1.t
+	desc = purge_your_vassal_policy_menu3_land_reform_events.1.d
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
@@ -26,46 +26,46 @@ purge_your_vassal_policy_menu3_citizenship.1 = {
 	}
     
     option = {
-        name = purge_your_vassal_policy_menu3_citizenship_events.1.choose.1
+        name = purge_your_vassal_policy_menu3_land_reform_events.1.choose.1
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_ethnostate
+            activate_law = law_type:law_serfdom
         }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_menu3_citizenship_events.1.choose.2
+        name = purge_your_vassal_policy_menu3_land_reform_events.1.choose.2
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_national_supremacy
+            activate_law = law_type:law_tenant_farmers
         }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_menu3_citizenship_events.1.choose.3
+        name = purge_your_vassal_policy_menu3_land_reform_events.1.choose.3
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_racial_segregation
+            activate_law = law_type:law_commercialized_agriculture
         }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_menu3_citizenship_events.1.choose.4
+        name = purge_your_vassal_policy_menu3_land_reform_events.1.choose.4
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_cultural_exclusion
+            activate_law = law_type:law_homesteading
         }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_menu3_citizenship_events.1.choose.5
+        name = purge_your_vassal_policy_menu3_land_reform_events.1.choose.5
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_multicultural
+            activate_law = law_type:law_collectivized_agriculture
         }
     }
     

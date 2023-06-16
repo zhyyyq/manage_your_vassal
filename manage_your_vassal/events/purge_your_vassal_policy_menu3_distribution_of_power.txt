@@ -38,7 +38,7 @@ purge_your_vassal_policy_menu3_distribution_of_power.1 = {
         name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.2
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_oligarchy
+            activate_law = law_type:law_technocracy
         }
     }
     
@@ -47,7 +47,7 @@ purge_your_vassal_policy_menu3_distribution_of_power.1 = {
         name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.3
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_elder_council
+            activate_law = law_type:law_oligarchy
         }
     }
     
@@ -56,7 +56,7 @@ purge_your_vassal_policy_menu3_distribution_of_power.1 = {
         name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.4
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_landed_voting
+            activate_law = law_type:law_elder_council
         }
     }
     
@@ -65,7 +65,7 @@ purge_your_vassal_policy_menu3_distribution_of_power.1 = {
         name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.5
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_wealth_voting
+            activate_law = law_type:law_landed_voting
         }
     }
     
@@ -74,7 +74,7 @@ purge_your_vassal_policy_menu3_distribution_of_power.1 = {
         name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.6
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_census_voting
+            activate_law = law_type:law_wealth_voting
         }
     }
     
@@ -83,7 +83,7 @@ purge_your_vassal_policy_menu3_distribution_of_power.1 = {
         name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.7
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_universal_suffrage
+            activate_law = law_type:law_census_voting
         }
     }
     
@@ -92,7 +92,25 @@ purge_your_vassal_policy_menu3_distribution_of_power.1 = {
         name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.8
         remove_modifier = purge_your_vassal
         scope:target_country = {
+            activate_law = law_type:law_universal_suffrage
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.9
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
             activate_law = law_type:law_anarchy
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_distribution_of_power_events.1.choose.10
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:law_single_party_state
         }
     }
     

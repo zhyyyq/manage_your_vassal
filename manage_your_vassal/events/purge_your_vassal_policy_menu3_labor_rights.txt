@@ -29,7 +29,7 @@ purge_your_vassal_policy_menu3_labor_rights.1 = {
         name = purge_your_vassal_policy_menu3_labor_rights_events.1.choose.1
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_serfdom_banned
+            activate_law = law_type:law_no_workers_rights
         }
     }
     
@@ -38,22 +38,13 @@ purge_your_vassal_policy_menu3_labor_rights.1 = {
         name = purge_your_vassal_policy_menu3_labor_rights_events.1.choose.2
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_serfdom
-        }
-    }
-    
-
-    option = {
-        name = purge_your_vassal_policy_menu3_labor_rights_events.1.choose.3
-        remove_modifier = purge_your_vassal
-        scope:target_country = {
             activate_law = law_type:law_regulatory_bodies
         }
     }
     
 
     option = {
-        name = purge_your_vassal_policy_menu3_labor_rights_events.1.choose.4
+        name = purge_your_vassal_policy_menu3_labor_rights_events.1.choose.3
         remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_worker_protections
