@@ -17,7 +17,7 @@ const handleLawFile = (fileName: string, content: string) => {
         name = purge_your_vassal_policy_menu3_${policy_name}_events.1.choose.${index+1}
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:${item.getName()}
+            activate_law = law_type:${item[0]}
         }
     }
     `)
@@ -35,7 +35,7 @@ const handleLawFile = (fileName: string, content: string) => {
     const event_cn = ` purge_your_vassal_policy_menu3_${policy_name}.1:0 "$lawgroup_${policy_name}$ 政策修改"\n`;
     const eventTitle_cn = ` purge_your_vassal_policy_menu3_${policy_name}_events.1.t:0 "$lawgroup_${policy_name}$ 政策修改"\n`;
     const eventDetail_cn = ` purge_your_vassal_policy_menu3_${policy_name}_events.1.d:0 "附庸政策修改"\n`;
-    const optionLocals = parsedContent.map((item, index) =>  (` purge_your_vassal_policy_menu3_${policy_name}_events.1.choose.${index+1}:0 "$${item.getName()}$"`)).join('\n');
+    const optionLocals = parsedContent.map((item, index) =>  (` purge_your_vassal_policy_menu3_${policy_name}_events.1.choose.${index+1}:0 "$${item[0]}$"`)).join('\n');
     fs.writeFileSync(`${path.join(__dirname,`../dist/localization/english/purge_your_vassal_policy_menu3_${policy_name}_l_english.yml`)}`, `\ufeff${fileHead_eng}${event}${eventTitle}${eventDetail}${optionLocals}`);
     fs.writeFileSync(`${path.join(__dirname,`../dist/localization/simp_chinese/purge_your_vassal_policy_menu3_${policy_name}_l_simp_chinese.yml`)}`, `\ufeff${fileHead_simp_chinese}${event_cn}${eventTitle_cn}${eventDetail_cn}${optionLocals}`);
 }
@@ -81,7 +81,8 @@ const generateMenu2 = async () => {
     fs.writeFileSync(`${path.join(__dirname,`../dist/localization/simp_chinese/purge_your_vassal_policy_menu2_l_simp_chinese.yml`)}`, '\ufeff' + fileHead_simp_chinese + optionLocals.cn );
 }
 const generateMenu3 = async (fileNames: string[]) => {
-    fileNames.map( async file => {
+    fileNames.forEach(file => {
+        console.log(file);
         const fileContent = fs.readFileSync(game_base_dir + '/' + file );
         handleLawFile(file, fileContent.toString());
     });
