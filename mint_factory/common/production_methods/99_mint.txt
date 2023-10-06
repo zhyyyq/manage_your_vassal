@@ -1,0 +1,18 @@
+﻿pm_mint = {
+	texture = "gfx/interface/icons/production_method_icons/bakeries.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_paper_add = 10		# x20 =  800
+
+			# output goods
+			building_output_fine_art_add = 10000	# x30 = 1350
+		}
+
+		level_scaled = {
+			# profit = 550
+			building_employment_capitalists_add = 100
+		}
+	}
+}		
