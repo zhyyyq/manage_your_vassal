@@ -1,7 +1,0 @@
-﻿l_english:
- purge_your_vassal_policy_menu1.1:0 "policy modify"
- purge_your_vassal_policy_menu1_events.1.t:0 "policy modify"
- purge_your_vassal_policy_menu1_events.1.d:0 "modify vassal's policy"
- purge_your_vassal_policy_menu1.1.choose.1:0 "power_structure"
- purge_your_vassal_policy_menu1.1.choose.2:0 "economy"
- purge_your_vassal_policy_menu1.1.choose.3:0 "human_rights"

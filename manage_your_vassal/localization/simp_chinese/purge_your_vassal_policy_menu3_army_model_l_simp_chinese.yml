@@ -1,8 +1,0 @@
-﻿l_simp_chinese:
- purge_your_vassal_policy_menu3_army_model.1:0 "$lawgroup_army_model$ 政策修改"
- purge_your_vassal_policy_menu3_army_model_events.1.t:0 "$lawgroup_army_model$ 政策修改"
- purge_your_vassal_policy_menu3_army_model_events.1.d:0 "附庸政策修改"
- purge_your_vassal_policy_menu3_army_model_events.1.choose.1:0 "$law_peasant_levies$"
- purge_your_vassal_policy_menu3_army_model_events.1.choose.2:0 "$law_professional_army$"
- purge_your_vassal_policy_menu3_army_model_events.1.choose.3:0 "$law_national_militia$"
- purge_your_vassal_policy_menu3_army_model_events.1.choose.4:0 "$law_mass_conscription$"

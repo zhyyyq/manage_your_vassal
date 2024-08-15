@@ -1,8 +1,0 @@
-﻿l_english:
- purge_your_vassal_policy_menu3_welfare.1:0 "$lawgroup_welfare$ policy modify"
- purge_your_vassal_policy_menu3_welfare_events.1.t:0 "$lawgroup_welfare$ policy modify"
- purge_your_vassal_policy_menu3_welfare_events.1.d:0 "modify vassal's policy"
- purge_your_vassal_policy_menu3_welfare_events.1.choose.1:0 "$law_no_social_security$"
- purge_your_vassal_policy_menu3_welfare_events.1.choose.2:0 "$law_poor_laws$"
- purge_your_vassal_policy_menu3_welfare_events.1.choose.3:0 "$law_wage_subsidies$"
- purge_your_vassal_policy_menu3_welfare_events.1.choose.4:0 "$law_old_age_pension$"

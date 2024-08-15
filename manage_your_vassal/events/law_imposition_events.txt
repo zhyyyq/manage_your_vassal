@@ -1,0 +1,91 @@
+﻿namespace = law_imposition_events
+
+law_imposition_events.1 = {
+	type = country_event
+	placement = root
+	event_image = {
+		video = "ep1_persian_court"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	title = law_imposition_events.1.t
+	desc = law_imposition_events.1.d
+	flavor = law_imposition_events.1.f
+
+	duration = 3
+  option = { # start enacting immediately
+		name = law_imposition_events.1.a.1
+		show_as_unavailable = {
+			always = yes
+		}
+		activate_law = imposed_law.type
+		add_enactment_modifier = {
+			name = agreeable_to_imposition
+		}
+		custom_tooltip = {
+			text = law_imposition_events.1.journal_entry_hint
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					je:je_law_imposition ?= {
+						has_modifier = foreign_legislative_interference
+					}
+				}
+				je:je_law_imposition ?= {
+					remove_modifier = foreign_legislative_interference
+					add_modifier = foreign_legislative_interference_enactment
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					0.10 < "enactment_chance_for_law(imposed_law.type)"
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					0.15 < "enactment_chance_for_law(imposed_law.type)"
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					0.20 < "enactment_chance_for_law(imposed_law.type)"
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					0.25 < "enactment_chance_for_law(imposed_law.type)"
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					0.30 < "enactment_chance_for_law(imposed_law.type)"
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					0.35 < "enactment_chance_for_law(imposed_law.type)"
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					0.40 < "enactment_chance_for_law(imposed_law.type)"
+				}
+				add = 10
+			}
+		}
+	}
+}
