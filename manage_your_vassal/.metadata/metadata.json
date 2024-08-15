@@ -1,13 +1,13 @@
 {
-  "name" : "manage your vassal",
-  "id" : "",
-  "version" : "1.1",
-  "supported_game_version" : "",
-  "short_description" : "manage your vassal",
-  "thumbnail" : "thumbnail.png",
-  "tags" : [],
-  "relationships" : [],
-  "game_custom_data" : {
-    "multiplayer_synchronized" : true
+  "name": "manage your vassal",
+  "id": "2898319670",
+  "version": "1.1",
+  "supported_game_version": "",
+  "short_description": "manage your vassal",
+  "thumbnail": "thumbnail.png",
+  "tags": [],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
   }
 }

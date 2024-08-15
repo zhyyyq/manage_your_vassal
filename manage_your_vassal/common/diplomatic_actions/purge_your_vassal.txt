@@ -1,4 +1,7 @@
 ﻿purge_your_vassal = {
+  groups= {
+		general
+	}
 	requires_approval = no
 	should_notify_third_parties = no
 	show_effect_in_tooltip = no
@@ -31,6 +34,9 @@
 }
 
 purge_tax_high = {
+  groups= {
+		general
+	}
 	requires_approval = no
 	should_notify_third_parties = no
 	can_select = no
@@ -60,6 +66,9 @@ purge_tax_high = {
 		}
 }
 purge_tax_middle = {
+  groups= {
+		general
+	}
 	requires_approval = no
 	should_notify_third_parties = no
 	can_select = no
@@ -90,6 +99,9 @@ purge_tax_middle = {
 	}
 }
 purge_tax_low = {
+  groups= {
+		general
+	}
 	requires_approval = no
 	should_notify_third_parties = no
 	can_select = no
