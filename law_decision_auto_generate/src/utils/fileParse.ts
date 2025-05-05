@@ -1,8 +1,9 @@
 export const a = "";
-
-type newV3ConfigObj = [string, newV3ConfigObj | string | newV3ConfigObj[]];
-
-export const parse_file = (fileContent: string): newV3ConfigObj[] => {
+type ParsedObject = {
+  content: string;
+  children: ParsedObject[];
+};
+export const parse_file = (fileContent: string): ParsedObject[] => {
   // paradox's file is simple base on indent which means we can parse it using stack
 
   // filter code remark
@@ -17,35 +18,42 @@ export const parse_file = (fileContent: string): newV3ConfigObj[] => {
     .join(" ")
     .split(/\s/)
     .filter((item) => item);
-  const stack: ("=" | "{" | "}" | newV3ConfigObj)[] = [];
-  lines.forEach((word) => {
-    console.log(word);
-    if (word === "add_ruling_interest_group") {
-      console.log(word);
+
+  let res: ParsedObject[] = [];
+  let stack: any[] = [];
+  for (let item of lines) {
+    switch (item) {
+      case "?=":
+        stack.push("=");
+        continue;
+      case "=":
+        stack.push("=");
+        continue;
+      case "{":
+        stack.push("{");
+        continue;
+      case "}":
+        let lastIndex = stack.lastIndexOf("=");
+        // flush the items into stack[lastIndex-1]
+        stack[lastIndex - 1].children = stack.slice(lastIndex + 2);
+        stack.splice(lastIndex);
+        continue;
+      default:
+        if (stack[stack.length - 1] == "=") {
+          stack.pop();
+          stack[stack.length - 1].children.push({
+            content: item,
+            children: [],
+          });
+        } else {
+          stack.push({
+            content: item,
+            children: [],
+          });
+        }
+        continue;
     }
-    if (/\w/.test(word)) {
-      const obj: newV3ConfigObj = [word, ""];
-      if (stack[stack.length - 1] === "=") {
-        stack.pop();
-        const key = stack[stack.length - 1] as newV3ConfigObj;
-        key[1] = obj;
-      } else {
-        stack.push(obj);
-      }
-    } else if (/=/.test(word)) {
-      stack.push("=");
-    } else if (/\{/.test(word)) {
-      stack.push("{");
-    } else if (/\}/.test(word)) {
-      let t = stack.pop();
-      while (t !== "{") {
-        t = stack.pop();
-      }
-      stack.pop();
-    } else {
-      // exception
-    }
-  });
-  console.log(stack);
-  return stack as any;
+  }
+  res = stack as ParsedObject[];
+  return res;
 };

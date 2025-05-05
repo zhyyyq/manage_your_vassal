@@ -11,6 +11,9 @@ const handleLawFile = (fileName: string, content: string) => {
     policy_group
       .flatMap((item) => item.subs)
       .find((sub) => fileName.includes(sub.fileName))?.name || fileName;
+  if (policy_name == "education_system") {
+    console.log("education_system");
+  }
   const parsedContent = parse_file(content);
   const options = parsedContent
     .map(
@@ -22,7 +25,7 @@ const handleLawFile = (fileName: string, content: string) => {
         }
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:${item[0]}
+            activate_law = law_type:${item.content}
         }
     }
     `
@@ -56,7 +59,7 @@ const handleLawFile = (fileName: string, content: string) => {
       (item, index) =>
         ` purge_your_vassal_policy_menu3_${policy_name}_events.1.choose.${
           index + 1
-        }:0 "$${item[0]}$"`
+        }:0 "$${item.content}$"`
     )
     .join("\n");
   fs.writeFileSync(
@@ -172,13 +175,14 @@ const generateMenu2 = async () => {
 const generateMenu3 = async (fileNames: string[]) => {
   fileNames.forEach((file) => {
     console.log(file);
-    const fileContent = fs.readFileSync(game_base_dir + "/" + file);
+    const fileContent = fs.readFileSync(path.join(game_base_dir, file));
     handleLawFile(file, fileContent.toString());
   });
 };
 
 const main = async () => {
-  const dir = fs.readdirSync(game_base_dir);
+  let dir = fs.readdirSync(game_base_dir);
+  dir = dir.filter((pred) => /00/.test(pred));
   await generateMenu3(dir);
   await generateMenu2();
 };
