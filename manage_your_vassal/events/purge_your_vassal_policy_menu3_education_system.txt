@@ -32,10 +32,10 @@ purge_your_vassal_policy_menu3_education_system.1 = {
             activate_law = law_type:law_no_schools
         }
     }
-  
-  
+    
+
     option = {
-        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.9
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.2
         remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_religious_schools
@@ -44,7 +44,7 @@ purge_your_vassal_policy_menu3_education_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.10
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.3
         remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_private_schools
@@ -53,7 +53,7 @@ purge_your_vassal_policy_menu3_education_system.1 = {
     
 
     option = {
-        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.11
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.4
         remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_public_schools
