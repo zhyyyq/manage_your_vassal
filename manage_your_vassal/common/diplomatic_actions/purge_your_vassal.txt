@@ -54,13 +54,14 @@ purge_tax_high = {
 		income_transfer_based_on_second_country = yes
 	
     requirement_to_maintain = {
-        trigger = {
-          custom_tooltip = {
-            text = "DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE"
-            is_subject_of = ROOT
-          }			
-        }
-    }	
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_SUBJECT_RELATION"
+					scope:target_country = { is_subject_of = root }
+				}
+			}
+		}	
+  }
 }
 purge_tax_middle = {
   groups= {
@@ -83,13 +84,13 @@ purge_tax_middle = {
 		income_transfer_based_on_second_country = yes
 	
     requirement_to_maintain = {
-        trigger = {
-          custom_tooltip = {
-            text = "DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE"
-            is_subject_of = ROOT
-          }			
-        }
-    }	
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_SUBJECT_RELATION"
+					scope:target_country = { is_subject_of = root }
+				}
+			}
+		}	
 	}
 }
 purge_tax_low = {
@@ -113,13 +114,13 @@ purge_tax_low = {
 		income_transfer_based_on_second_country = yes
 	
     requirement_to_maintain = {
-        trigger = {
-          custom_tooltip = {
-            text = "DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE"
-            is_subject_of = ROOT
-          }			
-        }
-    }	
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_SUBJECT_RELATION"
+					scope:target_country = { is_subject_of = root }
+				}
+			}
+		}	
 	}
 }
 
