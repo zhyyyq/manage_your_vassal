@@ -38,7 +38,7 @@ purge_your_vassal_policy_menu3_education_system.1 = {
         name = purge_your_vassal_policy_menu3_education_system_events.1.choose.2
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_religious_schools
+            activate_law = law_type:=
         }
     }
     
@@ -47,13 +47,76 @@ purge_your_vassal_policy_menu3_education_system.1 = {
         name = purge_your_vassal_policy_menu3_education_system_events.1.choose.3
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_private_schools
+            activate_law = law_type:{
         }
     }
     
 
     option = {
         name = purge_your_vassal_policy_menu3_education_system_events.1.choose.4
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:group
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.5
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:icon
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.6
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:progressiveness
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.7
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:disallowing_laws
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.8
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:modifier
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.9
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:law_religious_schools
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.10
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:law_private_schools
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_education_system_events.1.choose.11
         remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_public_schools

@@ -78,6 +78,15 @@ purge_your_vassal_policy_menu3_governance_principles.1 = {
         }
     }
     
+
+    option = {
+        name = purge_your_vassal_policy_menu3_governance_principles_events.1.choose.7
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:law_corporate_state
+        }
+    }
+    
 	option = {
 		name = CANCEL
 		default_option = yes

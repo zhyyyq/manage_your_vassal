@@ -42,7 +42,7 @@ purge_tax_high = {
 	can_select = no
 	can_select_to_break = no
 
-	potential = {
+	selectable = {
 		always = no
 	}
 	
@@ -50,20 +50,17 @@ purge_tax_high = {
 		is_two_sided_pact = no
 		
 		income_transfer = 0.6
-		recipient_gets_income_transfer = no
-		income_transfer_based_on_recipient = yes
+		second_country_gets_income_transfer = no
+		income_transfer_based_on_second_country = yes
 	
-		should_auto_break = {
-			always = no # Once forced duration is up
-		}
-	
-		should_invalidate = {
-			scope:target_country = {
-				NOT = { 
-					is_subject_of = ROOT
-				}
-			}	
-		}
+    requirement_to_maintain = {
+        trigger = {
+          custom_tooltip = {
+            text = "DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE"
+            is_subject_of = ROOT
+          }			
+        }
+    }	
 }
 purge_tax_middle = {
   groups= {
@@ -82,20 +79,17 @@ purge_tax_middle = {
 		is_two_sided_pact = no
 		
 		income_transfer = 0.4
-		recipient_gets_income_transfer = no
-		income_transfer_based_on_recipient = yes
+		second_country_gets_income_transfer = no
+		income_transfer_based_on_second_country = yes
 	
-		should_auto_break = {
-			always = no # Once forced duration is up
-		}
-	
-		should_invalidate = {
-			scope:target_country = {
-				NOT = { 
-					is_subject_of = ROOT
-				}
-			}	
-		}	
+    requirement_to_maintain = {
+        trigger = {
+          custom_tooltip = {
+            text = "DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE"
+            is_subject_of = ROOT
+          }			
+        }
+    }	
 	}
 }
 purge_tax_low = {
@@ -115,20 +109,17 @@ purge_tax_low = {
 		is_two_sided_pact = no
 		
 		income_transfer = 0.2
-		recipient_gets_income_transfer = no
-		income_transfer_based_on_recipient = yes
+		second_country_gets_income_transfer = no
+		income_transfer_based_on_second_country = yes
 	
-		should_auto_break = {
-			always = no # Once forced duration is up
-		}
-	
-		should_invalidate = {
-			scope:target_country = {
-				NOT = { 
-					is_subject_of = ROOT
-				}
-			}	
-		}	
+    requirement_to_maintain = {
+        trigger = {
+          custom_tooltip = {
+            text = "DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE"
+            is_subject_of = ROOT
+          }			
+        }
+    }	
 	}
 }
 

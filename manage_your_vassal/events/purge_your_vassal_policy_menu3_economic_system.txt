@@ -65,7 +65,7 @@ purge_your_vassal_policy_menu3_economic_system.1 = {
         name = purge_your_vassal_policy_menu3_economic_system_events.1.choose.5
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_laissez_faire
+            activate_law = law_type:law_extraction_economy
         }
     }
     
@@ -74,13 +74,22 @@ purge_your_vassal_policy_menu3_economic_system.1 = {
         name = purge_your_vassal_policy_menu3_economic_system_events.1.choose.6
         remove_modifier = purge_your_vassal
         scope:target_country = {
-            activate_law = law_type:law_cooperative_ownership
+            activate_law = law_type:law_laissez_faire
         }
     }
     
 
     option = {
         name = purge_your_vassal_policy_menu3_economic_system_events.1.choose.7
+        remove_modifier = purge_your_vassal
+        scope:target_country = {
+            activate_law = law_type:law_cooperative_ownership
+        }
+    }
+    
+
+    option = {
+        name = purge_your_vassal_policy_menu3_economic_system_events.1.choose.8
         remove_modifier = purge_your_vassal
         scope:target_country = {
             activate_law = law_type:law_command_economy

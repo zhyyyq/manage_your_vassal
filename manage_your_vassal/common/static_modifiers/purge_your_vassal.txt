@@ -19,12 +19,12 @@ overlord_low_taxes = {
 
 overlord_attract_pop = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_migration_pull_mult = -0.5
+	state_migration_pull_mult = -5
 }
 
 overlord_send_pop = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	state_migration_pull_mult = 0.5
+	state_migration_pull_mult = 5
 }
 
 overlord_support_build = {
